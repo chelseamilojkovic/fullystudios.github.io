@@ -1,6 +1,6 @@
 _site
-.idea
+.sass-cache
+.jekyll-metadata
+public
 node_modules
-.publish
-.DS_Store
-/Gemfile.lock
+src/assets/javascripts/bundle.js
