@@ -2,22 +2,22 @@
 layout: default
 ---
 
-<div class="home">
+<nav class="navigation" id="startmenu">
+    {% include menu.html %}
+</nav>
 
-  <h1 class="page-heading">Posts</h1>
+{% include cc.html %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% include case-highlight.html %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+{% include about-us.html %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+{% include logowall.html %}
 
-</div>
+<section class="box box--people box--right box--center c-people center">
+    <h2>Smell that?</h2>
+    <p class="h4">Yeah, that’s the sweet smell of coffee (or tea). Swing by some time and have some.</p>
+    <a href="mailto:{{ site.email }}" class="button"><span>Sign me up for fika!</span></a>
+</section>
+
+<br><br>

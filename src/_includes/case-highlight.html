@@ -1,0 +1,56 @@
+<!-- 
+####################
+## Loop through the latest work
+-->
+<div class="grid grid--space work-highlight">
+    <!-- Get all cc-about posts and revers them -->
+    {% assign items = site.work | sort: 'date' | reverse %}
+    {% assign root = 'js/' %}
+    
+    {% for work in items limit:1 %}
+        <!-- 
+        ###############################
+        ## Get code for the background
+        ## set in current post
+        -->
+        {% unless work.background-image_2880 == nil %}
+            <style>
+                .grid__offsetcolumn1-2 {
+                    background-image: url({{site.baseurl}}/assets/{{ work.background-image_1440 }});
+                }
+                @media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
+                    .grid__offsetcolumn1-2 {
+                        background-image: url({{site.baseurl}}/assets/{{ work.background-image_2880 }});
+                    }
+                }
+            </style>
+        {% endunless %}
+
+        <div class="grid__offsetcolumn1-2 background-image">
+            {% unless work.background == nil %}
+                {{ work.background }}
+            {% endunless %}
+        </div>
+
+        <!-- 
+        ####################
+        ## Get scripts from
+        ## current post
+        -->
+        {% comment %}
+        {% for js in work.scripts %}
+            <script type="text/javascript">
+            {% include {{ root | append: js }} %}
+            </script>
+        {% endfor %} 
+        {% endcomment %}    
+
+        <div class="boxtext grid__offsetcolumn2-2">
+            <h2>{{work.title}}</h2>
+            <p>{{work.subtitle}}</p>
+            <a href="{{ work.url | prepend: site.baseurl }}" class="button"><span>{{work.button-text}}</span></a>
+            <a href="{{ site.works | prepend: site.baseurl }}" class="link link--next"><span>View all projects</span></a>
+        </div>
+    {% endfor %}
+
+</div>

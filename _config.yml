@@ -1,23 +1,60 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Fully Studios
+email: hi@fullystudios.se
+tel: "+46 738 07 30 72"
+description: Fully Studios - This site is under construction.
+adress: Victoriapassagen,<br>Södra Larmgatan 14,<br>411 16 Göteborg
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://fullystudios.github.io" # the base hostname & protocol for your site
+twitter: "https://twitter.com/fullyflared_se"
+github:  "https://github.com/fullystudios"
+facebook: "https://www.facebook.com/Fully-Flared-Digital-Agency-150488108297019/?ref=ts&fref=ts"
+vimeo: "https://vimeo.com/fullystudios"
+instagram: "https://www.instagram.com/fullystudios/"
+
+# Papricaklubben
+case_highlight1_id: 6
+
+# Collector
+case_highlight2_id: 1
+
+# KappAhl
+case_highlight3_id: 2
+
+# Links
+works: "/works"
+about: "/about"
+
+# Custom post types 
+collections:
+  work:
+    output: true
+    permalink: /:collection/:title/
+  curious-about:
+    output: true
+    permalink: /:collection/:title/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "curious-about"
+    values:
+      layout: "curious"
+      button-text: Read all about it
+      background-color: "#f2f2f2"
+  -
+    scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+      button-text: View case
+      background-color: "#f2f2f2"
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 source: src
 destination: public
@@ -34,6 +71,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-autoprefixer
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # plugin settings
 autoprefixer:

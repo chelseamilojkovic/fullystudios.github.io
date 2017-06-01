@@ -1,15 +1,28 @@
 ---
-layout: page
+layout: about
 title: About
+pagetitle: |
+  # Fully Studios is a Swedish web and film studio specializing in motion on the web.
 permalink: /about/
+slug: about
+bg-color: "c-business-bg"
+section1: |
+  Basically, we’re interested in making the web more vibrant. Through websites, illustration and film. Vivid narratives and animated web design.
+
+section2: |
+  Above all else, we like to make digital products that are solidly and thoughtfully built.
+
+section3: |
+  #### With the fundamentals nailed down, we can explore and carry out the more dazzling experiments at the intersection of art and code.
+
+section4: |
+  #### This is what the Curiosities are all about -- following our noses through barely-charted territories of design. These creative romps keep us sharp and adaptive and, usually, we end up exactly where we need to be.
+
+button-text: Check them out
+button-url: "/curiousities/"
+
+script: "<script src='https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.1/mo.min.js'></script><script src='//cdnjs.cloudflare.com/ajax/libs/SVG-Morpheus/0.3.2/svg-morpheus.js'></script>"
+
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Fully Studios is a Swedish web and film studio specializing in motion on the web.
