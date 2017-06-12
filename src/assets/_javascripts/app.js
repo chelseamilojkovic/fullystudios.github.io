@@ -1,13 +1,3 @@
-import React, { Component } from 'react';
-import {render} from 'react-dom';
-import Hello from './components/Hello';
+import ComponentsRegister from './components/ComponentRegister';
 
-class App extends Component {
-  render() {
-    return (
-      <Hello />
-    )
-  }
-}
-
-render(<App />, document.getElementById('root'));
+// const nav = new Nav();

@@ -1,17 +1,17 @@
 module.exports = {
-  entry: "./src/assets/_javascripts/app.js",
+  entry: './src/assets/_javascripts/app.js',
   output: {
     path: './src/assets/bundles/',
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /\.js?$/,
         exclude: /(node_modules)/,
-        loader: 'babel', // 'babel-loader' is also a legal name to reference
+        loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['es2015']
         }
       }
     ]
