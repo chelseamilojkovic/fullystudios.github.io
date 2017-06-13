@@ -4,7 +4,7 @@ module.exports =
 class LogoAnimation {
 	constructor () {
 		this._logoContainer = document.getElementById('logo_anim');
-		this._path = 'assets/logo.json'
+		this._path = '/assets/logo.json'
 
         this._animData = {
         	container: this._logoContainer,

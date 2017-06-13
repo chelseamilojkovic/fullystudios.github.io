@@ -6,7 +6,6 @@ class Nav {
         this._menuIsOpen = false;
 
         this._menutoggle.addEventListener('click', e => {
-			console.log('hello');
 			e.preventDefault();
 			this._menuIsOpen ? this.closeMenu() : this.openMenu();
 		}, false);
