@@ -66,18 +66,20 @@
 
 	var _LogoAnimation2 = _interopRequireDefault(_LogoAnimation);
 
-	var _BarbaWrapper = __webpack_require__(5);
+	var _PageTransition = __webpack_require__(7);
 
-	var _BarbaWrapper2 = _interopRequireDefault(_BarbaWrapper);
+	var _PageTransition2 = _interopRequireDefault(_PageTransition);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// import BarbaWrapper from './BarbaWrapper';
 
 	module.exports = {
 		nav: new _Nav2.default(),
 		logoAnimation: new _LogoAnimation2.default(),
-		barbaWrapper: new _BarbaWrapper2.default()
+		// barbaWrapper: new BarbaWrapper,
+		pageTransition: new _PageTransition2.default()
 	};
-	// import PageTransition from './PageTransition';
 
 /***/ }),
 /* 2 */
@@ -13649,68 +13651,7 @@
 	};var bodymovinjs = {}; function play(animation){ animationManager.play(animation); } function pause(animation){ animationManager.pause(animation); } function togglePause(animation){ animationManager.togglePause(animation); } function setSpeed(value,animation){ animationManager.setSpeed(value, animation); } function setDirection(value,animation){ animationManager.setDirection(value, animation); } function stop(animation){ animationManager.stop(animation); } function moveFrame(value){ animationManager.moveFrame(value); } function searchAnimations(){ if(standalone === true){ animationManager.searchAnimations(animationData,standalone, renderer); }else{ animationManager.searchAnimations(); } } function registerAnimation(elem){ return animationManager.registerAnimation(elem); } function resize(){ animationManager.resize(); } function start(){ animationManager.start(); } function goToAndStop(val,isFrame, animation){ animationManager.goToAndStop(val,isFrame, animation); } function setSubframeRendering(flag){ subframeEnabled = flag; } function loadAnimation(params){ if(standalone === true){ params.animationData = JSON.parse(animationData); } return animationManager.loadAnimation(params); } function destroy(animation){ return animationManager.destroy(animation); } function setQuality(value){ if(typeof value === 'string'){ switch(value){ case 'high': defaultCurveSegments = 200; break; case 'medium': defaultCurveSegments = 50; break; case 'low': defaultCurveSegments = 10; break; } }else if(!isNaN(value) && value > 1){ defaultCurveSegments = value; } if(defaultCurveSegments >= 50){ roundValues(false); }else{ roundValues(true); } } function installPlugin(type,plugin){ if(type==='expressions'){ expressionsPlugin = plugin; } } function getFactory(name){ switch(name){ case "propertyFactory": return PropertyFactory;case "shapePropertyFactory": return ShapePropertyFactory; case "matrix": return Matrix; } } bodymovinjs.play = play; bodymovinjs.pause = pause; bodymovinjs.togglePause = togglePause; bodymovinjs.setSpeed = setSpeed; bodymovinjs.setDirection = setDirection; bodymovinjs.stop = stop; bodymovinjs.moveFrame = moveFrame; bodymovinjs.searchAnimations = searchAnimations; bodymovinjs.registerAnimation = registerAnimation; bodymovinjs.loadAnimation = loadAnimation; bodymovinjs.setSubframeRendering = setSubframeRendering; bodymovinjs.resize = resize; bodymovinjs.start = start; bodymovinjs.goToAndStop = goToAndStop; bodymovinjs.destroy = destroy; bodymovinjs.setQuality = setQuality; bodymovinjs.installPlugin = installPlugin; bodymovinjs.__getFactory = getFactory; bodymovinjs.version = '4.7.0'; function checkReady(){ if (document.readyState === "complete") { clearInterval(readyStateCheckInterval); searchAnimations(); } } function getQueryVariable(variable) { var vars = queryString.split('&'); for (var i = 0; i < vars.length; i++) { var pair = vars[i].split('='); if (decodeURIComponent(pair[0]) == variable) { return decodeURIComponent(pair[1]); } } } var standalone = '__[STANDALONE]__'; var animationData = '__[ANIMATIONDATA]__'; var renderer = ''; if(standalone) { var scripts = document.getElementsByTagName('script'); var index = scripts.length - 1; var myScript = scripts[index] || { src: '' }; var queryString = myScript.src.replace(/^[^\?]+\??/,''); renderer = getQueryVariable('renderer'); } var readyStateCheckInterval = setInterval(checkReady, 100); return bodymovinjs; }));  
 
 /***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _barba = __webpack_require__(6);
-
-	var _barba2 = _interopRequireDefault(_barba);
-
-	var _PageTransition = __webpack_require__(7);
-
-	var _PageTransition2 = _interopRequireDefault(_PageTransition);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	module.exports = function () {
-		function BarbaWrapper() {
-			_classCallCheck(this, BarbaWrapper);
-
-			this._pageTransition = new _PageTransition2.default();
-
-			_barba2.default.Pjax.start();
-			this._fadeTransition = _barba2.default.BaseTransition.extend({
-				start: function start() {
-					// As soon the loading is finished and the old page is faded out, let's fade the new page
-					Promise.all([this.newContainerLoading, this.animOut()]).then(this.animIn.bind(this));
-				}
-			});
-		}
-
-		_createClass(BarbaWrapper, [{
-			key: 'animOut',
-			value: function animOut() {
-				return new Promise(function (resolve) {
-					console.log('peggy');
-					this._pageTransition.playSegments([[0, 11]], true);
-					this._pageTransition.onComplete = function () {
-						resolve(true);
-					};
-				});
-			}
-		}, {
-			key: 'animIn',
-			value: function animIn() {
-				window.scrollTo(0, 0);
-
-				// play the out transition
-				this._pagetransition.playSegments([[25, 54]], true);
-
-				// immediately clear the old DOM
-				this.done();
-			}
-		}]);
-
-		return BarbaWrapper;
-	}();
-
-/***/ }),
+/* 5 */,
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15431,36 +15372,86 @@
 
 	'use strict';
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _bodymovin = __webpack_require__(4);
 
 	var _bodymovin2 = _interopRequireDefault(_bodymovin);
+
+	var _barba = __webpack_require__(6);
+
+	var _barba2 = _interopRequireDefault(_barba);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	module.exports = function PageTransition() {
-	    _classCallCheck(this, PageTransition);
+	module.exports = function () {
+	    function PageTransition() {
+	        _classCallCheck(this, PageTransition);
 
-	    this._transitionOverlay = document.createElement('div');
-	    this._transitionOverlay.classList.add('transition-overlay');
-	    document.body.appendChild(this._transitionOverlay);
-	    this._path = '/assets/pagetransition.json';
+	        _barba2.default.Pjax.start();
+	        this._fadeTransition = _barba2.default.BaseTransition.extend({
+	            start: function start() {
+	                Promise.all([this.newContainerLoading, this.animOut()]).then(this.animIn.bind(this));
+	            }
+	        });
 
-	    this._transitionData = {
-	        container: this._transitionOverlay,
-	        renderer: 'svg',
-	        loop: false,
-	        autoplay: false,
-	        autoloadSegments: false,
-	        path: this._path,
-	        rendererSettings: {
-	            preserveAspectRatio: 'none'
+	        _barba2.default.Pjax.getTransition = function () {
+	            /**
+	            * Here you can use your own logic!
+	            * For example you can use different Transition based on the current page or link...
+	            */
+
+	            return this._fadeTransition;
+	        };
+
+	        this._transitionOverlay = document.createElement('div');
+	        this._transitionOverlay.classList.add('transition-overlay');
+	        document.body.appendChild(this._transitionOverlay);
+	        this._path = '/assets/pagetransition.json';
+
+	        this._transitionData = {
+	            container: this._transitionOverlay,
+	            renderer: 'svg',
+	            loop: false,
+	            autoplay: false,
+	            autoloadSegments: false,
+	            path: this._path,
+	            rendererSettings: {
+	                preserveAspectRatio: 'none'
+	            }
+	        };
+
+	        this._pageTransition = _bodymovin2.default.loadAnimation(this._transitionData);
+	    }
+
+	    _createClass(PageTransition, [{
+	        key: 'animOut',
+	        value: function animOut() {
+	            return new Promise(function (resolve) {
+	                console.log('peggy');
+	                this._pageTransition.playSegments([[0, 11]], true);
+	                this._pageTransition.onComplete = function () {
+	                    resolve(true);
+	                };
+	            });
 	        }
-	    };
+	    }, {
+	        key: 'animIn',
+	        value: function animIn() {
+	            window.scrollTo(0, 0);
 
-	    this._pageTransition = _bodymovin2.default.loadAnimation(this._transitionData);
-	};
+	            // play the out transition
+	            this._pagetransition.playSegments([[25, 54]], true);
+
+	            // immediately clear the old DOM
+	            this.done();
+	        }
+	    }]);
+
+	    return PageTransition;
+	}();
 
 /***/ })
 /******/ ]);

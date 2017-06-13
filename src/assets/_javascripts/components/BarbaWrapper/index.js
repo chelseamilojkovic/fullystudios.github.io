@@ -8,18 +8,26 @@ class BarbaWrapper {
 		
 		Barba.Pjax.start ();
 		this._fadeTransition = Barba.BaseTransition.extend ({
-			start () {
-				// As soon the loading is finished and the old page is faded out, let's fade the new page
+			start: function () {
 				Promise
-					.all([this.newContainerLoading, this.animOut()])
+					.all([this.newContainerLoading, this.animOut().bind(this)])
 					.then(this.animIn.bind(this));
 			}
 		})
+
+		Barba.Pjax.getTransition = function() {
+			/**
+			* Here you can use your own logic!
+			* For example you can use different Transition based on the current page or link...
+			*/
+
+			return this._fadeTransition;
+		};
 	}
 
 	animOut () {
 		return new Promise(function(resolve) {
-			console.log('peggy')
+			console.log('peggy');
 			this._pageTransition.playSegments([[0,11]],true);
 			this._pageTransition.onComplete = function() {
 				resolve(true);
