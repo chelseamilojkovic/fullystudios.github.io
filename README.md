@@ -18,5 +18,6 @@ To build: `rake b`
 - för över style
 - för över cases och deras js
 - importera dependencies på rätt sätt (package + webpack)
+- eslinter
 
  
