@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #f2f2f2">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Målbaren</title>
+  <meta name="description" content="Matbaren (or “The Food Bar”) is the ideal alternative for grocery stores across Sweden that want to offer their customers higher quality “fast food.” They ha...">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/work/malbaren/">
+  <link rel="alternate" type="application/rss+xml" title="Fully Studios" href="http://localhost:4000/feed.xml">
+
+  <!--<script type="text/javascipt" src="/js/jquery-2.2.4.min.js"></script>-->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script> -->
+  <!-- <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script type="text/javascipt" src="/js/picturefill.min.js" async></script> -->
+  <!--<script type="text/javascipt" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.6.8/bodymovin_light.min.js" async></script>-->
+
+  <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="image_src" type="image/gif" href="/assets/thumb.gif" />
+  
+<script src="http://127.0.0.1:5678/livereload.js"></script></head>
+
+
+  <body style="background-color: #f2f2f2">
+
+    <header class="site-header">
+    <a href="#" class="button button--nav" id="openmenu">
+    <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 100 100">
+        <line x1="27.6" y1="35.3" x2="72.4" y2="35.3"/>
+        <line x1="27.6" y1="50.6" x2="72.4" y2="50.6"/>
+        <line x1="27.6" y1="66" x2="72.4" y2="66"/>
+    </svg></span>
+    </a>
+    <a class="site-header__logo" href="/">
+        <div class="site-header__logoanim" id="logo_anim"></div>
+    </a>
+</header>
+
+<nav class="navigation" id="menu">
+    <div class="navigation__bg"></div>
+    <ul class="navigation__list">
+    <li class="navigation__item">
+        <a class="navigation__link menu-work" href="/work">Work</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">r</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-about" href="/about">About</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">o</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-curiosities" href="/curiousities">Curiosities</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">u</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-contact" href="/contact">Contact</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">n</span>
+    </li>
+</ul>
+
+<video class="navigation__video" 
+    poster="/assets/intro-knappfilm1-poster.jpg"
+    autoplay muted playsinline>
+    <source src="/assets/intro-knappfilm1.mp4">
+    <img src="/assets/intro-knappfilm1-poster.jpg">
+</video>
+
+</nav>
+
+ 	  <div id="barba-wrapper">
+    	<div class="site-content barba-container" data-namespace="malbaren">
+        	<article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	
+		
+			<style>
+				.hero--malbaren {
+					background-image: url(/assets/work/malbaren/hero.jpg);
+				}
+				@media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
+					.hero--malbaren {
+						background-image: url(/assets/work/malbaren/hero@2x.jpg);
+					}
+				}
+			</style>
+		
+	
+	<div class="hero hero--malbaren background-image" id="work_malbaren"  style="background-color: #49B276">
+		
+		<header class="hero__header">
+		
+			<h1 itemprop="name headline">
+				Målbaren
+			</h1>
+			<h2>High quality fast food</h2>
+			
+			
+		</header>
+
+		
+		
+
+		<div class="metabox column__wrapper">
+			<div class="column column--vertical">
+				<strong class="meta-description">Client:</strong>
+				<span class="meta">Matbaren</span>
+			</div>
+			<div class="column column--vertical">
+				<strong class="meta-description">Project:</strong>
+				<span class="meta">Website</span>
+			</div>
+			
+			<div class="column column--vertical">
+				<a href="http://målbaren.se" class="button" id="malbaren_button"><span>Visit the site</span></a>
+			</div>
+			
+		</div>
+
+    </div>
+
+	
+	<div class="ingress ingress--malbaren">
+		<p>Matbaren (or “The Food Bar”) is the ideal alternative for grocery stores across Sweden that want to offer their customers higher quality “fast food.” They have been developing various food concepts to offer store clerks and their customers, and each time they come out with a new one, they turn to us for digital promotion.</p>
+
+
+		
+		<a class="metabutton" href="mailto:jonas@fullyflared.se">
+			Author: <span>Jonas Sandstedt</span>
+		</a>
+		
+		
+	</div>
+	
+
+	<main itemprop="articleBody">
+		<style>
+    .malbaren-button {
+        cursor: pointer;
+        background: rgba(27,42,51,.05);
+        color: #49b276;
+        display: inline-block;
+        padding: .54em 1.2em .6em;
+        margin-bottom: 1em;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        font-weight: 400;
+        text-indent: .2em;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .malbaren-button:hover, .malbaren-button:visited, .malbaren-button:active {
+        color: #49b276;
+        outline: none;
+    }
+    .malbaren-button:focus {
+        outline: 0;
+        background: rgba(27,42,51,.1);
+    }
+    .malbaren-button__decoration {
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        border-color: #49b276;
+        -webkit-transition: -webkit-transform .2s cubic-bezier(.12,.01,.07,2);
+        transition: transform .2s cubic-bezier(.12,.01,.07,2);
+        pointer-events: none;
+    }
+    .malbaren-button__decoration:nth-child(1) {
+        top: 0;
+        left: 0;
+        border-top: 1px solid;
+        border-left: 1px solid;
+    }
+    .malbaren-button__decoration:nth-child(2) {
+        top: 0;
+        right: 0;
+        border-top: 1px solid;
+        border-right: 1px solid;
+    }
+    .malbaren-button__decoration:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid;
+        border-left: 1px solid
+    }
+    .malbaren-button__decoration:nth-child(4) {
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+    }
+    .malbaren-button:hover .malbaren-button__decoration:nth-child(1), .malbaren-button:active .malbaren-button__decoration:nth-child(1) {
+        -webkit-transform: translate3D(-5px,-5px,0);
+        transform: translate3D(-5px,-5px,0);
+    }
+    .malbaren-button:hover .malbaren-button__decoration:nth-child(2), .malbaren-button:active .malbaren-button__decoration:nth-child(2) {
+        -webkit-transform: translate3D(5px,-5px,0);
+        transform: translate3D(5px,-5px,0);
+    }
+    .malbaren-button:hover .malbaren-button__decoration:nth-child(3), .malbaren-button:active .malbaren-button__decoration:nth-child(3) {
+        -webkit-transform: translate3D(-5px,5px,0);
+        transform: translate3D(-5px,5px,0);
+    }
+    .malbaren-button:hover .malbaren-button__decoration:nth-child(4), .malbaren-button:active .malbaren-button__decoration:nth-child(4) {
+        -webkit-transform: translate3D(5px,5px,0);
+        transform: translate3D(5px,5px,0);
+    }
+</style>
+
+
+    <section class="boxtext boxtext--frame boxtext--frame--curiosities center">
+        <div class="h4">
+            <p>Matbaren came to us recently with an idea they had about placing their food carts in gyms and stocking them with various healthy foods suited to fitness and nutrition goals. This time they asked if we could do more than just a website, but rather create an entire brand concept for this food-in-gyms idea, from coming up with a name and tagline to devising its graphic toolkit to handling social media.</p>
+
+<p>Our answer was a hearty yes.</p>
+
+        </div>
+    </section>
+
+
+
+    <section class="sectionspacing">
+        <h2 id="branding-go">Branding, go!</h2>
+<h3 id="when-it-came-to-thinking-of-a-name-we-searched-for-a-single-word-that-would-combine-the-values-of-both-exercise-and-food-it-needed-to-be-memorable-and-show-a-kinship-with-matbarens-other-concepts">When it came to thinking of a name, we searched for a single word that would combine the values of both exercise and food. It needed to be memorable and show a kinship with Matbaren’s other concepts.</h3>
+
+<p>We came up with the name Målbaren, which is a play on words in Swedish, as mål means both “meal” and “goal.” The tagline, “för målmedvetna människor” means both “for determined people” and “for food conscious people.”</p>
+
+    </section>
+
+
+<section class="grid">
+    
+        <div class="grid__fullwidth">
+            <img class="image"
+                alt=""
+                width="1440" height="643"
+                src="/assets/work/malbaren/vagn-concept_1440.jpg" 
+                srcset="/assets/work/malbaren/vagn-concept_2880.jpg 2880w,
+                        /assets/work/malbaren/vagn-concept_1440.jpg 1440w"
+                sizes="100vw">
+        </div>
+    
+
+    
+        <div class="grid__boxunder boxtext">
+            <p>When it came to animating the concept with visuals, we started off by thinking about the food cart as a design element in the space around it. It needed to be a natural part of its athletic environment, yet still make a graphic impact.</p>
+
+<p>These days many of the big athletic brands are putting the technical aspects of their products front and center, which lends itself to a futuristic, fast-paced feel. We thought it would be interesting to apply this approach to a food concept. So we did.</p>
+
+<p>But we didn’t go over the top with it. We went for streamlined and sporty with subtle details.</p>
+
+        </section>
+    
+
+</div>
+
+
+    <section class="grid grid--space">
+        <div class="grid__offsetcolumn2-2 box box--right">
+            <p>The color palette needed to draw inspiration from the work-out world as well as look good on the web next to food images (we weren’t feeling neon, for example). I settled on this green as a primary color, as it has an energizing blue tone to it.</p>
+
+        </div>
+        <div class="grid__offsetcolumn1-2 c-white-bg">
+            <img class="image"
+                alt=""
+                width="1440" height="643"
+                src="/assets/work/malbaren/colors_1440.jpg" 
+                srcset="/assets/work/malbaren/colors_2880.jpg 2880w,
+                        /assets/work/malbaren/colors_1440.jpg 1440w"
+                sizes="100vw">
+        </div>
+    </section>
+
+
+<section class="sectionspacing">
+    
+            <p>For the typeface in the logo, I wanted something with power and energy in it, and with an anatomical feel if I could find it. I decided quite quickly it should be in italic, which gives the impression of forward-moving speed. And in bold too, for all the obvious reasons. 
+Panton Italic was ideal. If you look closely at the hairline creases in the M, A, and N it looks somewhat like flexed muscles.</p>
+
+    
+
+    <div class="imageline">
+        <div class="imageline__image">
+            <img class="image" alt=""
+                width="1440" height="960"
+                src="/assets/work/malbaren/process1_1440.jpg" 
+                srcset="/assets/work/malbaren/process1_2880.jpg 2880w,
+                        /assets/work/malbaren/process1_1440.jpg 1440w"
+                sizes="100vw">
+            </div>
+        <div class="imageline__image">
+            <img width="1440" height="960" alt="" src="/assets/work/malbaren/tyop.svg">
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="sectionspacing">
+        <div class="box">
+            <h2 id="lights-camera-action">Lights, camera, action!</h2>
+
+<p>Fully also produced the film for the Målbaren concept. The film features Sweden’s beloved Olympic athlete Sanna Kallur as well as renowned chef Gustav Tradgårdh. Each in their natural habitats of course (training grounds and the kitchen, respectively). The visual fusion of athleticism and the culinary arts underscored the message of Målbaren perfectly: nutritious, delicious food and fitness goals are made for each other.</p>
+
+        </div>
+        <div class="video">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/oVzgmvZ8DdY?rel=0&amp;showinfo=0" frameborder="0" 
+        allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+
+    <section class="flexcenter">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="4em" viewBox="0 0 100 100"><path fill="#ffde7f" d="M0 0l100 100H0"/></svg>
+        <div class="c-curiosities-bg" style="width:100%; padding: 40px 60px 60px">
+            <h2 id="to-the-internet">To the Internet!</h2>
+<h3 id="next-up-was-a-website-for-målbaren">Next up was a website for Målbaren.</h3>
+
+<p>I wanted to incorporate the concept of motion throughout the site. In subtle ways, though. Even in symbolic, non-moving ways.</p>
+
+            <p>See the slanted lines dividing the content? Initially I had them ramping up from left to right, like the incline you’d face on a good workout. But it actually ended up being visually exhausting to look at. It triggered the sensation of an uphill trudge.</p>
+
+<p>When I sloped them downwards it was an instant visual relief. (Who doesn’t love the downhill?) It also fit better with the idea that Målbaren’s food is quick and easy.</p>
+
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="4em" viewBox="0 0 100 100"><path fill="#ffde7f" d="M100 100V0H0"/></svg>
+    </section>
+
+
+<picture>
+    <source media="(max-width: 600px)"
+            srcset="/assets/work/malbaren/site-screen-mobile@1x.jpg 375w,
+                    /assets/work/malbaren/site-screen-mobile@2x.jpg 750w"
+            sizes="100vw">
+    <img
+        class="image" alt=""
+        width="1440" height="960"
+        src="/assets/work/malbaren/site-screens_1440.jpg" 
+        srcset="/assets/work/malbaren/site-screens_2880.jpg 2880w,
+                /assets/work/malbaren/site-screens_1440.jpg 1440w"
+        sizes="100vw">
+</picture>
+
+<br>
+
+
+
+    <section class="sectionspacing" id="buttons">
+        <p><span class="custom-button malbaren-button">And<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span>
+<span class="custom-button malbaren-button">notice<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span>
+<span class="custom-button malbaren-button">how the<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span>
+<span class="custom-button malbaren-button">corners<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span>
+<span class="custom-button malbaren-button">pop when<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span>
+<span class="custom-button malbaren-button">you hover<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span>
+<span class="custom-button malbaren-button">over<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span>
+<span class="custom-button malbaren-button">a button?<span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span><span class="malbaren-button__decoration"></span></span><br />
+I wanted the buttons to have some energy. You’ll notice that they expand with a bit of a reverberating bounce at the end. It’s hardly noticeable but it makes a significant difference. It’s like a little punch.</p>
+
+    </section>
+
+
+
+
+    <section class="sectionspacing">
+        <p>Go ahead and poke around <a href="http://målbaren.se">målbaren.se</a> to see if you can spot more. If subtle animations are your thing, I’m frequently experimenting on <a href="http://codepen.io/sandstedt">CodePen</a>. Come hang!</p>
+
+        <p>
+            <a class="metabutton" href="mailto:jonas@fullyflared.se">
+                Author: <span>Jonas Sandstedt</span>
+            </a>
+        </p>
+    </section>
+
+
+
+
+
+
+
+	</main>
+
+</article>
+
+<div class="boxgrid">
+	<h2 class="boxgrid__header h4">Check out our other projects</h2>
+
+	
+	
+	
+
+	
+
+	
+
+	<a class="boxgrid__box" href="/work/owd-bob/">
+		<div class="image-loader" style="background: #c9cba3"> 
+			<img src="/assets/work/owd-bob/hero.jpg" alt="Owd Bob">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>Owd Bob</h3>
+			<p>The most elusive print shop in the world</p>
+		</div>
+	</a>
+
+	<a class="boxgrid__box" href="/work/papricaklubben/">
+		<div class="image-loader" style="background: #80b568"> 
+			<img src="/assets/work/papricaklubben/hero.jpg" alt="Paprica&shy;klubben">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>Paprica&shy;klubben</h3>
+			<p>An interactive world for ICAs children club</p>
+		</div>
+	</a>
+</div>
+
+
+    	</div>
+    </div>
+
+    <footer class="column__wrapper footer">
+
+    <div class="column">
+        <p><strong>Fully Studios</strong></p>
+        <p>Victoriapassagen,<br>Södra Larmgatan 14,<br>411 16 Göteborg<br>
+        <a href="https://www.google.se/maps/dir//Fully+Flared+Digital+Agency,+Victoriapassagen,+S%C3%B6dra+Larmgatan+14,+411+16+G%C3%B6teborg/@57.7032779,11.9651249,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464ff365f9958667:0xc960c81a24202e95!2m2!1d11.9656134!2d57.7033354">Navigate here</a>
+        </p>
+    </div>
+ 
+    <div class="column">
+        <p><strong>Contact us</strong></p>
+        <p>
+            <a href="tel:+46 738 07 30 72">+46 738 07 30 72</a><br>
+            <a href="mailto:hi@fullystudios.se">hi@fullystudios.se</a>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><strong>Follow us</strong></p>
+        <p>
+            <a href="https://www.facebook.com/Fully-Flared-Digital-Agency-150488108297019/?ref=ts&fref=ts">Facebook</a><br>
+            <a href="https://www.instagram.com/fullystudios/">Instagram</a><br>
+            <a href="https://vimeo.com/fullystudios">Vimeo</a><br>
+            <a href="https://github.com/fullystudios">Github</a><br>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><img src="/assets/fully-studios-logo.svg" alt="Fully Studios" /></p>
+    </div>
+
+</footer>
+
+<script src="/assets/bundles/bundle.js"></script>
+
+ 
+
+
+
+ <nav style="display: none">
+    <span>Placeholder navigation during development</span>
+    <ul>
+        <li><a style="font-size: 1em" href="http://localhost:4000">Home</a></li>
+        
+        
+        <li><a style="font-size: 1em" href="/about/">About</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/contact/">Contact us</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/curiousities/">Curiousities</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/design-system/">Design System</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a style="font-size: 1em" href="/building-process/">The process of building this site</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/work/">Work</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Fira Mono:400,700']
+        }
+      });
+    </script>
+
+  </body>
+
+</html>

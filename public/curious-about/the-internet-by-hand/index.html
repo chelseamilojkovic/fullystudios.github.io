@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #f8f8f8">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Internet by hand</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ipsa dolorem, minima sunt maiores a ducimus sed atque, similique, molestias labore. Tempora, ...">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/curious-about/the-internet-by-hand/">
+  <link rel="alternate" type="application/rss+xml" title="Fully Studios" href="http://localhost:4000/feed.xml">
+
+  <!--<script type="text/javascipt" src="/js/jquery-2.2.4.min.js"></script>-->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script> -->
+  <!-- <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script type="text/javascipt" src="/js/picturefill.min.js" async></script> -->
+  <!--<script type="text/javascipt" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.6.8/bodymovin_light.min.js" async></script>-->
+
+  <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="image_src" type="image/gif" href="/assets/thumb.gif" />
+  
+<script src="http://127.0.0.1:5678/livereload.js"></script></head>
+
+
+  <body style="background-color: #f8f8f8">
+
+    <header class="site-header">
+    <a href="#" class="button button--nav" id="openmenu">
+    <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 100 100">
+        <line x1="27.6" y1="35.3" x2="72.4" y2="35.3"/>
+        <line x1="27.6" y1="50.6" x2="72.4" y2="50.6"/>
+        <line x1="27.6" y1="66" x2="72.4" y2="66"/>
+    </svg></span>
+    </a>
+    <a class="site-header__logo" href="/">
+        <div class="site-header__logoanim" id="logo_anim"></div>
+    </a>
+</header>
+
+<nav class="navigation" id="menu">
+    <div class="navigation__bg"></div>
+    <ul class="navigation__list">
+    <li class="navigation__item">
+        <a class="navigation__link menu-work" href="/work">Work</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">r</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-about" href="/about">About</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">o</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-curiosities" href="/curiousities">Curiosities</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">u</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-contact" href="/contact">Contact</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">n</span>
+    </li>
+</ul>
+
+<video class="navigation__video" 
+    poster="/assets/intro-knappfilm1-poster.jpg"
+    autoplay muted playsinline>
+    <source src="/assets/intro-knappfilm1.mp4">
+    <img src="/assets/intro-knappfilm1-poster.jpg">
+</video>
+
+</nav>
+
+ 	  <div id="barba-wrapper">
+    	<div class="site-content barba-container" data-namespace="the-internet-by-hand">
+        	<article class="page cc-the-internet-by-hand" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	
+		
+			<style>
+				.hero--the-internet-by-hand {
+					background-image: url(/assets/curious-about/the-internet-by-hand/hero_3.jpg);
+				}
+				@media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
+					.hero--the-internet-by-hand {
+						background-image: url(/assets/curious-about/the-internet-by-hand/hero_3@2x.jpg);
+					}
+				}
+			</style>
+		
+	
+	<div class="hero hero--cc hero--the-internet-by-hand background-image" id="work_the-internet-by-hand">
+		
+
+		
+		
+		<header class="hero__header">
+			<h1 itemprop="name headline">
+				<span class="hero__subheader">Current curiosity:</span> 
+				The Internet by hand
+			</h1>
+			
+			
+			
+		</header>
+
+		
+		
+
+    </div>
+
+	<main class="content" itemprop="articleBody">
+		
+		<div class="c-white-bg">
+			<div class="metabox metabox--offset column__wrapper center">
+				<h4>
+					<p>Luckily for those who can’t draw to save their lives, in our present digital era you don’t need to be a good drawer to be a good designer. You can create entire worlds without having to pick up a pen.</p>
+
+				</h4>
+			</div>
+		</div>
+		
+
+		<!-- 
+###################################
+## Get all content (sections) from
+## the current curious-about post
+-->
+
+
+<div class="section section--1 sectionspacing-small">
+  
+        <p>This being said, we’re pretty fascinated by the old arts and things crafted by human hands. We have two properly educated illustrators at Fully, which is a larger number than most agencies have at all. The twist is that one of them is our back-end coder and the other is our filmmaker.</p>
+
+  
+</div>
+
+
+<div class="section c-metal-bg center">
+    <h1><br>[Slider]<br><br></h1>
+</div>
+
+
+<div class="section section--2 sectionspacing-small">
+    
+        <p>Over the years, we’ve done dozens of projects for clients involving custom illustrations and animated movies. But having poly-talented illustrators in our midst has prompted us to experiment with translating the handwritten arts to the web in new ways.</p>
+
+  
+</div>
+
+
+
+<div class="section section--3 grid sectionspacing-small">
+    <div class="grid__column-large">
+        <div class="box box--people">
+            <h3 id="perhaps-we-sound-a-little-dr-frankenstein-esque-but-were-looking-to-liberate-our-hand-drawn-creations-from-their-rectangles">Perhaps we sound a little Dr. Frankenstein-esque, but we’re looking to liberate our hand-drawn creations from their rectangles.</h3>
+
+        </div>
+    </div>
+    <div class="grid__column-small flexcenter">
+        
+        <style>
+        .follow-frank {
+            width: 50%;
+            position: relative;
+        }
+        .follow-frank:hover .frank-cheek {
+            -webkit-transform: translate3D(0, 0, 0);
+                    transform: translate3D(0, 0, 0);
+        }
+        .follow-frank .frank-head {
+            width: 100%;
+            height: auto;
+        }
+        .follow-frank .frank-cheek {
+            position: absolute;
+            top: 49.4%;
+            left: 60%;
+            width: 20%;
+            height: auto;
+            -webkit-transform: translate3D(10%, 10%, 0);
+                    transform: translate3D(10%, 10%, 0);
+            -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.24, 1.32, 0.52, -1.73);
+            transition: -webkit-transform 0.1s cubic-bezier(0.24, 1.32, 0.52, -1.73);
+            transition: transform 0.1s cubic-bezier(0.24, 1.32, 0.52, -1.73);
+            transition: transform 0.1s cubic-bezier(0.24, 1.32, 0.52, -1.73), -webkit-transform 0.1s cubic-bezier(0.24, 1.32, 0.52, -1.73);
+        }
+        .follow-frank .frank-pupil {
+            position: absolute;
+            width: 40%;
+            height: auto;
+        }
+        .follow-frank .frank-eye-left {
+            top: 38.8%;
+            left: 26%;
+        }
+        .follow-frank .frank-eye-right {
+            top: 38.8%;
+            left: 60%;
+        }
+        .follow-frank .frank-eye-left, .follow-frank .frank-eye-right {
+            width: 16.5%;
+            height: 0;
+            padding-bottom: 17%;
+            position: absolute;
+            overflow: hidden;
+        }
+        </style>
+        <div class="follow-frank" id="follow-frank">
+            <img class="frank-head" id="frank-head" src="/assets/curious-about/the-internet-by-hand/head-frank.png" alt="Frankenstein" draggable="false">
+            <div class="frank-eye-left" id="frank-eye-left">
+                <img class="frank-pupil" id="frank-pupil-1" src="/assets/curious-about/the-internet-by-hand/head-frank-pupil-left.png" alt="Frankenstein" draggable="false">
+            </div>
+            <div class="frank-eye-right" id="frank-eye-right">
+                <img class="frank-pupil" id="frank-pupil-2" src="/assets/curious-about/the-internet-by-hand/head-frank-pupil-right.png" alt="Frankenstein" draggable="false">
+            </div>
+            <img class="frank-cheek" id="frank-cheek" src="/assets/curious-about/the-internet-by-hand/head-frank-cheek.png" alt="Frankenstein" draggable="false">
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="section section--4">
+
+        <p>But busting them out of their .png files and video players isn’t just a nerdy design wish. It’s actually an imperative for the future of hand-drawn elements on the web. It’s not feasible for these assets to be fixed files anymore. The rise of mobile devices and the massive variance in screen sizes means that all websites, and all the content on them, need to be responsive.</p>
+
+<p>Illustrations need to be rendered in vector (SVG) so they can grow to the size of a building and shrink to the size of a watch. The cool thing about vector images is that they can be moved with Javascript. Think of it this way: you have an image made of code that moves because of code. This is animation without the limits of a play button. Wild.</p>
+
+
+</div>
+
+
+
+<div class="section sectionspacing-small">
+    <p><img class="image" src="/assets/curious-about/the-internet-by-hand/tomeloop.png" alt="Tomte walkcycle"></p>
+</div>
+
+
+
+<div class="section section--5">
+    <h3 id="the-implications-for-interactive-storytelling-and-powerful-infographics-are-far-reaching-weve-dabbled-a-bit-thusfar-and-the-results-are-pretty-stellar">The implications for interactive storytelling and powerful infographics are far-reaching. We’ve dabbled a bit thusfar and the results are pretty stellar:</h3>
+
+    
+    <div class="imagegrid">
+        <div class="imagegrid__image imagegrid__image--two">
+            <img class="image"
+                alt="Example lorem ipsum"
+                width="1440" height="643"
+                src="/assets/curious-about/the-internet-by-hand/example.png" 
+                srcset="/assets/curious-about/the-internet-by-hand/example.png 14400w,
+                        /assets/curious-about/the-internet-by-hand/example.png 720w"
+                sizes="(min-width: 580px) 50vw,
+                        100vw">
+        </div>
+        <div class="imagegrid__image imagegrid__image--two">
+            <img class="image"
+                alt="Example lorem ipsum"
+                width="1440" height="643"
+                src="/assets/curious-about/the-internet-by-hand/example.png" 
+                srcset="/assets/curious-about/the-internet-by-hand/example.png 14400w,
+                        /assets/curious-about/the-internet-by-hand/example.png 720w"
+                sizes="(min-width: 580px) 50vw,
+                        100vw">
+        </div>
+    </div>
+</div>
+
+
+
+    <style>
+        #the-internet-by-hand_bg {
+            background-image: url( /assets/curious-about/the-internet-by-hand/illustration_bg.jpg);
+        }
+        @media (min-width: 800px) {
+            #the-internet-by-hand_bg {
+                background-image: url( /assets/curious-about/the-internet-by-hand/illustration_bg@2x.jpg);
+            }
+        }
+    </style>
+    <div id="the-internet-by-hand_bg" class="background-image background-image--largepadding flexcenter">
+        
+            <p>We’re eager to push forward with placing and animating hand-drawn elements on the web. Much of the motivation comes from the fact that we spend a lot of our spare time with comics, videogames and various other kinds of art. Whenever we’re looking to do something new and innovative in our work, we tend to look to our favorite stuff for inspiration.</p>
+
+      
+    </div>
+
+
+
+<div class="section sectionspacing-small box box--center">
+    <h3 id="it-follows-that-were-fascinated-by-how-we-can-get-art-to-live-on-the-web-rather-than-just-upload-it-we-want-to-translate-it-completely-and-entirely-to-a-digital-medium-through-code-and-in-doing-so-expand-its-capabilities">It follows that we’re fascinated by how we can get art to live on the web. Rather than just “upload” it, we want to translate it completely and entirely to a digital medium through code, and in doing so, expand its capabilities.</h3>
+
+</div>
+
+
+<div style="padding: 4em; color: red">
+    <h2>[example of hand drawn thing →  javascript animation]</h2>
+</div>
+
+
+
+<div class="section section--8">
+    <p>As the technology develops, we think this kind of animation will play a larger and larger role in web experiences. Granted it’s not the future, but it is a future of the web. Computer-generated imagery (CGI) will only continue to grow in importance. But as it does, hand-drawn imagery will provide a fresh alternative that delivers a staggering visceral impact when done well.</p>
+
+<p>After all, drawings done by hand are as limitless as the human mind. When this form is truly joined to the near-limitlessness of the web, well…. some awesome things will be created, to put it lightly.</p>
+
+    <p>
+        <a href="/contact" class="button"><span>Get in touch</span></a>
+    </p>
+</div>
+
+ 
+
+	</main>
+
+</article>
+
+
+
+<div class="boxgrid boxgrid--curiosity">
+	<h2 class="boxgrid__header h4">Check out our other curiousities</h2>
+	
+		
+		<a class="boxgrid__box" href="/curious-about/opinionated-ecommerce/">
+			
+				<div class="image-loader" style="background: #ccc">
+				
+				</div>
+				<div class="boxgrid__caption">
+					<h3>Opinionated e-commerce</h3>
+					<p>Lorem ipsum</p>
+				</div>
+			
+		</a>
+	
+		
+		<a class="boxgrid__box" href="/curious-about/developer-experience/">
+			
+				<div class="image-loader" style="background: #ccc">
+				
+					<img src="/assets/curious-about/developer-experience/hero.jpg" alt="Developer Experience">	
+				
+				</div>
+				<div class="boxgrid__caption">
+					<h3>Developer Experience</h3>
+					<p>In Pursuit of Blissful DevEx</p>
+				</div>
+			
+		</a>
+	
+		
+			
+</div>
+
+
+
+    	</div>
+    </div>
+
+    <footer class="column__wrapper footer">
+
+    <div class="column">
+        <p><strong>Fully Studios</strong></p>
+        <p>Victoriapassagen,<br>Södra Larmgatan 14,<br>411 16 Göteborg<br>
+        <a href="https://www.google.se/maps/dir//Fully+Flared+Digital+Agency,+Victoriapassagen,+S%C3%B6dra+Larmgatan+14,+411+16+G%C3%B6teborg/@57.7032779,11.9651249,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464ff365f9958667:0xc960c81a24202e95!2m2!1d11.9656134!2d57.7033354">Navigate here</a>
+        </p>
+    </div>
+ 
+    <div class="column">
+        <p><strong>Contact us</strong></p>
+        <p>
+            <a href="tel:+46 738 07 30 72">+46 738 07 30 72</a><br>
+            <a href="mailto:hi@fullystudios.se">hi@fullystudios.se</a>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><strong>Follow us</strong></p>
+        <p>
+            <a href="https://www.facebook.com/Fully-Flared-Digital-Agency-150488108297019/?ref=ts&fref=ts">Facebook</a><br>
+            <a href="https://www.instagram.com/fullystudios/">Instagram</a><br>
+            <a href="https://vimeo.com/fullystudios">Vimeo</a><br>
+            <a href="https://github.com/fullystudios">Github</a><br>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><img src="/assets/fully-studios-logo.svg" alt="Fully Studios" /></p>
+    </div>
+
+</footer>
+
+<script src="/assets/bundles/bundle.js"></script>
+
+ 
+
+
+
+ <nav style="display: none">
+    <span>Placeholder navigation during development</span>
+    <ul>
+        <li><a style="font-size: 1em" href="http://localhost:4000">Home</a></li>
+        
+        
+        <li><a style="font-size: 1em" href="/about/">About</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/contact/">Contact us</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/curiousities/">Curiousities</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/design-system/">Design System</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a style="font-size: 1em" href="/building-process/">The process of building this site</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/work/">Work</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Fira Mono:400,700']
+        }
+      });
+    </script>
+
+  </body>
+
+</html>

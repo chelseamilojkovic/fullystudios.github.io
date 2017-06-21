@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #f2f2f2">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Owd Bob</title>
+  <meta name="description" content="Given that Fully is a digital studio, the majority of our creations live, move and die on the Internet. This is a glorious thing; as an outlet for creativity...">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/work/owd-bob/">
+  <link rel="alternate" type="application/rss+xml" title="Fully Studios" href="http://localhost:4000/feed.xml">
+
+  <!--<script type="text/javascipt" src="/js/jquery-2.2.4.min.js"></script>-->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script> -->
+  <!-- <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script type="text/javascipt" src="/js/picturefill.min.js" async></script> -->
+  <!--<script type="text/javascipt" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.6.8/bodymovin_light.min.js" async></script>-->
+
+  <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="image_src" type="image/gif" href="/assets/thumb.gif" />
+  
+<script src="http://127.0.0.1:5678/livereload.js"></script></head>
+
+
+  <body style="background-color: #f2f2f2">
+
+    <header class="site-header">
+    <a href="#" class="button button--nav" id="openmenu">
+    <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 100 100">
+        <line x1="27.6" y1="35.3" x2="72.4" y2="35.3"/>
+        <line x1="27.6" y1="50.6" x2="72.4" y2="50.6"/>
+        <line x1="27.6" y1="66" x2="72.4" y2="66"/>
+    </svg></span>
+    </a>
+    <a class="site-header__logo" href="/">
+        <div class="site-header__logoanim" id="logo_anim"></div>
+    </a>
+</header>
+
+<nav class="navigation" id="menu">
+    <div class="navigation__bg"></div>
+    <ul class="navigation__list">
+    <li class="navigation__item">
+        <a class="navigation__link menu-work" href="/work">Work</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">r</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-about" href="/about">About</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">o</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-curiosities" href="/curiousities">Curiosities</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">u</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-contact" href="/contact">Contact</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">n</span>
+    </li>
+</ul>
+
+<video class="navigation__video" 
+    poster="/assets/intro-knappfilm1-poster.jpg"
+    autoplay muted playsinline>
+    <source src="/assets/intro-knappfilm1.mp4">
+    <img src="/assets/intro-knappfilm1-poster.jpg">
+</video>
+
+</nav>
+
+ 	  <div id="barba-wrapper">
+    	<div class="site-content barba-container" data-namespace="owd-bob">
+        	<article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	
+		
+			<style>
+				.hero--owd-bob {
+					background-image: url(/assets/work/owd-bob/hero.jpg);
+				}
+				@media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
+					.hero--owd-bob {
+						background-image: url(/assets/work/owd-bob/hero@2x.jpg);
+					}
+				}
+			</style>
+		
+	
+	<div class="hero hero--owd-bob background-image" id="work_owd-bob"  style="background-color: #c9cba3">
+		
+		<header class="hero__header">
+		
+			<h1 itemprop="name headline">
+				Owd Bob
+			</h1>
+			<h2>The most elusive print shop in the world</h2>
+			
+			
+		</header>
+
+		
+		
+
+		<div class="metabox column__wrapper">
+			<div class="column column--vertical">
+				<strong class="meta-description">Client:</strong>
+				<span class="meta">Internal lab</span>
+			</div>
+			<div class="column column--vertical">
+				<strong class="meta-description">Project:</strong>
+				<span class="meta">E-commerce</span>
+			</div>
+			
+			<div class="column column--vertical">
+				<a href="http://owdbob.com" class="button" id="owd-bob_button"><span>Visit the site</span></a>
+			</div>
+			
+		</div>
+
+    </div>
+
+	
+	<div class="ingress ingress--owd-bob">
+		<p>Given that Fully is a digital studio, the majority of our creations live, move and die on the Internet. This is a glorious thing; as an outlet for creativity, the digital world is boundless and constantly proffers new tools. The results can be stunning.</p>
+
+
+		
+		<a class="metabutton" href="mailto:r@fullyflared.se">
+			Author: <span>Robin Kollberg</span>
+		</a>
+		
+		
+	</div>
+	
+
+	<main itemprop="articleBody">
+		
+    <section class="grid grid--space grid--padding">
+        <div class="grid__column1-2">
+            <p>Growing up, my grandma was an avid collector of paintings. 
+She imparted both the thrill of obtaining art and respect for its makers.</p>
+
+<p>When art buying started to shift to the web, I noticed that both these things – the thrill and the respect – were being lost in translation. Print stores like Society 6 were selling artists’ work in bulk, and splashing their prints across mugs and t-shirts and all kinds of cheap ephemera. The artists went under-paid and under-noticed. Meanwhile, as a buyer, it was difficult to find “something special” when everything was 1 of 5,000+.</p>
+
+        </div>
+        <div class="grid__column2-2">
+            <img class="image"
+                alt=""
+                width="1440" height="1653"
+                src="/assets/work/owd-bob/paintings_720.jpg" 
+                srcset="/assets/work/owd-bob/paintings_1440.jpg 1440w,
+                        /assets/work/owd-bob/paintings_720.jpg 720w"
+                sizes="100vw"
+                style="max-width: 20em">
+        </div>
+    </section>
+
+
+
+    <section class="box box--people box--right">
+        <h2 id="the-idea">The idea</h2>
+<h3 id="i-called-mikael-late-one-night-with-an-idea-to-set-up-an-online-print-store-that-would-be-open-for-only-48-hours-at-a-time">I called Mikael late one night with an idea: to set up an online print store that would be open for only 48 hours at a time.</h3>
+
+<p>Each 48-hour cycle would feature just one print and one artist, created specially for the project and never to be reprinted again. Like the lithographs of old, each print would be numbered. There would only be so many printed as were ordered. If you pass it up, the webshop closes and it’s gone.</p>
+
+<p>Several interesting questions and hypotheses arose. We were about to test the general truth that web stores never close. What if they did? What if a web store had opening hours? How would that affect traffic, and sales?</p>
+
+    </section>
+
+
+
+
+    <section class="background-image background-image--padding" style="background-position: center right; background-size: contain; background-image: url(/assets/work/owd-bob/owd-bob-logo-white-lq.png)">
+            <h2 id="the-concept-takes-form">The concept takes form</h2>
+
+<p>We decided to call the store Owd Bob. This was a name I had in my head for a while. It was the name of a sled dog that accompanied the crew of The Endurance, which was shipwrecked in Antarctica in 1914. Obscure, I know, but for some reason it stuck.</p>
+
+<p>When I looked into it, I saw Owd Bob was the title an English children’s book published at the end of the 19th century. The author, Alfred Ollivant, wrote the whole thing in the Cumbrian dialect, making it nearly impossible to understand by the majority of the population. A bold move.</p>
+
+<p>I liked the idea of associating this project with single-minded artistic vision.</p>
+
+<p>For the logo, we opted for hand-lettering, as a way of simulating the creative process of the artist. While Owd Bob is closed, the landing page features a picture of the Mona Lisa – the famous keeper of secrets – with the logo concealing her face.</p>
+
+<p>Visit Owd Bob on<br />
+<a href="https://instagram.com">instagram</a></p>
+
+    </section>
+
+
+
+
+
+    
+    <img class="image"
+        alt=""
+        width="1440" height="643"
+        src="/assets/work/owd-bob/mona_1440.jpg" 
+        srcset="/assets/work/owd-bob/mona_2880.jpg 2880w,
+                /assets/work/owd-bob/mona_1440.jpg 1440w"
+        sizes="100vw">
+    
+
+
+
+
+<div class="grid grid--space">
+    <div class="grid__offsetcolumn2-2 c-business-bg flexcenter" id="lettering2">
+        <style>
+        #lettering2 svg {
+            padding: 6vw;
+            max-height: 60vh;
+        }
+        </style>
+    </div>
+
+    <section class="grid__offsetcolumn1-2 grid__offsetcolumn1-2--small box box--business">
+        <h2 id="the-secret-clubhouse">The Secret clubhouse</h2>
+<p>When it came to marketing, we didn’t go for range – we aimed for exclusivity. We started off only using Instagram. And we primarily promoted featured artists in our posts. This way we could focus on varied, quality content. We also sought to only follow interesting artists, not people likely to follow us back. Every follower should be someone interested in art, not interested in getting followers of their own.</p>
+
+<p>The opening hours were revealed on Instagram only. If you missed them, you needed to go back and check. Otherwise the opportunity was gone and the store’s “doors” closed yet again. We hoped this would inspire people to actively visit our profile, and to see the store opening as an event.</p>
+
+    </section>
+</div>
+
+
+
+ <section class="sectionspacing c-dark-bg flexcenter">
+     <div class="imageline">
+        
+            <div class="imageline__image">
+                <img class="image"
+                    alt="Image of projekt Owd Bob"
+                    src="/assets/work/owd-bob/post-1.jpg">
+            </div>
+        
+            <div class="imageline__image">
+                <img class="image"
+                    alt="Image of projekt Owd Bob"
+                    src="/assets/work/owd-bob/post-2.jpg">
+            </div>
+        
+            <div class="imageline__image">
+                <img class="image"
+                    alt="Image of projekt Owd Bob"
+                    src="/assets/work/owd-bob/post-3.jpg">
+            </div>
+        
+            <div class="imageline__image">
+                <img class="image"
+                    alt="Image of projekt Owd Bob"
+                    src="/assets/work/owd-bob/post-4.jpg">
+            </div>
+        
+    </div>
+</section> 
+
+
+<section class="slider-wide sectionspacing">
+    <div class="slider js_slider">
+        <div class="slider__frame js_frame">
+            <ul class="slider__slides js_slides">
+                    
+                <li class="slider__slide js_slide" style="width:947px;">
+                    <img class="image"
+                        alt="Image of project Owd Bob"
+                        src="/assets/work/owd-bob/slider-01-photo_finished_print_elin.jpg">
+                </li>
+
+                <li class="slider__slide js_slide" style="width:647px;">
+                    <img class="image"
+                        alt="Image of project Owd Bob"
+                        src="/assets/work/owd-bob/slider-02-elinjonsson_insta.jpg">
+                </li>
+
+                <li class="slider__slide js_slide" style="width:710px;">
+                    <img class="image"
+                        alt="Image of project Owd Bob"
+                        src="/assets/work/owd-bob/slider-03-screen-shot.jpg">
+                </li>
+
+                <li class="slider__slide js_slide" style="width:947px;">
+                    <img class="image"
+                        alt="Image of project Owd Bob"
+                        src="/assets/work/owd-bob/slider-01-photo_finished_print_elin.jpg">
+                </li>
+
+                <li class="slider__slide js_slide" style="width:647px;">
+                    <img class="image"
+                        alt="Image of project Owd Bob"
+                        src="/assets/work/owd-bob/slider-02-elinjonsson_insta.jpg">
+                </li>
+
+                <li class="slider__slide js_slide" style="width:710px;">
+                    <img class="image"
+                        alt="Image of project Owd Bob"
+                        src="/assets/work/owd-bob/slider-03-screen-shot.jpg">
+                </li>
+
+
+                <!-- 
+                    
+                        <li class="slider__slide js_slide" style="width:">
+                            <img class="image"
+                                alt="Image of project Owd Bob"
+                                src="/assets/work/owd-bob/">
+                        </li>
+                    
+                        <li class="slider__slide js_slide" style="width:">
+                            <img class="image"
+                                alt="Image of project Owd Bob"
+                                src="/assets/work/owd-bob/">
+                        </li>
+                    
+                        <li class="slider__slide js_slide" style="width:">
+                            <img class="image"
+                                alt="Image of project Owd Bob"
+                                src="/assets/work/owd-bob/">
+                        </li>
+                    
+                 -->
+            </ul>
+        </div>
+
+        <span class="js_prev prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"></path></g></svg>
+        </span>
+
+        <span class="js_next next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"></path></g></svg>
+        </span>
+        
+        <ul class="js_dots dots"></ul>
+
+    </div>
+</section>
+
+<!-- <div class="c-metal-bg image">
+<br><br>[ Image slider]<br><br><br>
+
+</div> -->
+
+
+    <section class="box box--center">
+        <div class="h4">
+            <p>Our plan worked. We gained a lot of interest and traffic and were contacted by several journalists who wanted to write about the project. For instance, My Clever Lab named us Startup of the Week. And the first artists told us that they sold more prints during the 48 hours than they had in a year when featured on some of the print-on-demand alternatives out there.</p>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="sectionspacing">
+        <h2 id="alive-and-growing">Alive and growing</h2>
+<p>The Owd Bob store is constantly evolving. We’re always looking for new ways to present and sell the prints. And new ways to market the site, simultaneously. As a studio, we love to tinker with new and clever ways to market on the web with an extremely low budget.</p>
+
+<p>It’s also a priority for us, both as individuals and as group, to make space for creative projects. Owd Bob was a side project, something Mikael and I would work on whenever we could snatch free hours.</p>
+
+<p>But these days we take “Fully Lab” seriously, setting aside agency hours to make each other’s quirky projects come to life. It gives us the liberty to experiment with progressive new techniques in the field, which ends up making our client work stronger and bolder.</p>
+
+<p>And it’s just important as a human to put yourself out there and make something. It’s easy to have an idea, and even easier to have an opinion. The hardest part is to deliver. It doesn’t need to be perfect, it just needs to get out there.</p>
+
+        
+        <p>
+        <a class="metabutton" href="mailto:r@fullyflared.se">
+			Author: <span>Robin Kollberg</span>
+		</a>
+        </p>
+		
+    </section>
+
+	</main>
+
+</article>
+
+<div class="boxgrid">
+	<h2 class="boxgrid__header h4">Check out our other projects</h2>
+
+	
+	
+	
+
+	
+
+	
+
+	<a class="boxgrid__box" href="/work/tanumstrand/">
+		<div class="image-loader" style="background: #7e93b0"> 
+			<img src="/assets/work/tanumstrand/hero.jpg" alt="TanumStrand">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>TanumStrand</h3>
+			<p>A year by the sea</p>
+		</div>
+	</a>
+
+	<a class="boxgrid__box" href="/work/malbaren/">
+		<div class="image-loader" style="background: #49B276"> 
+			<img src="/assets/work/malbaren/hero.jpg" alt="Målbaren">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>Målbaren</h3>
+			<p>High quality fast food</p>
+		</div>
+	</a>
+</div>
+
+
+    	</div>
+    </div>
+
+    <footer class="column__wrapper footer">
+
+    <div class="column">
+        <p><strong>Fully Studios</strong></p>
+        <p>Victoriapassagen,<br>Södra Larmgatan 14,<br>411 16 Göteborg<br>
+        <a href="https://www.google.se/maps/dir//Fully+Flared+Digital+Agency,+Victoriapassagen,+S%C3%B6dra+Larmgatan+14,+411+16+G%C3%B6teborg/@57.7032779,11.9651249,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464ff365f9958667:0xc960c81a24202e95!2m2!1d11.9656134!2d57.7033354">Navigate here</a>
+        </p>
+    </div>
+ 
+    <div class="column">
+        <p><strong>Contact us</strong></p>
+        <p>
+            <a href="tel:+46 738 07 30 72">+46 738 07 30 72</a><br>
+            <a href="mailto:hi@fullystudios.se">hi@fullystudios.se</a>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><strong>Follow us</strong></p>
+        <p>
+            <a href="https://www.facebook.com/Fully-Flared-Digital-Agency-150488108297019/?ref=ts&fref=ts">Facebook</a><br>
+            <a href="https://www.instagram.com/fullystudios/">Instagram</a><br>
+            <a href="https://vimeo.com/fullystudios">Vimeo</a><br>
+            <a href="https://github.com/fullystudios">Github</a><br>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><img src="/assets/fully-studios-logo.svg" alt="Fully Studios" /></p>
+    </div>
+
+</footer>
+
+<script src="/assets/bundles/bundle.js"></script>
+
+ 
+
+
+
+ <nav style="display: none">
+    <span>Placeholder navigation during development</span>
+    <ul>
+        <li><a style="font-size: 1em" href="http://localhost:4000">Home</a></li>
+        
+        
+        <li><a style="font-size: 1em" href="/about/">About</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/contact/">Contact us</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/curiousities/">Curiousities</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/design-system/">Design System</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a style="font-size: 1em" href="/building-process/">The process of building this site</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/work/">Work</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Fira Mono:400,700']
+        }
+      });
+    </script>
+
+  </body>
+
+</html>

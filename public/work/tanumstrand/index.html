@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #f2f2f2">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TanumStrand</title>
+  <meta name="description" content="TanumStrand is a hotel and retreat center on Sweden’s west coast, close-ish to the Norwegian border. With its granite archipelagos, misty mornings and gently...">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/work/tanumstrand/">
+  <link rel="alternate" type="application/rss+xml" title="Fully Studios" href="http://localhost:4000/feed.xml">
+
+  <!--<script type="text/javascipt" src="/js/jquery-2.2.4.min.js"></script>-->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script> -->
+  <!-- <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script type="text/javascipt" src="/js/picturefill.min.js" async></script> -->
+  <!--<script type="text/javascipt" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.6.8/bodymovin_light.min.js" async></script>-->
+
+  <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="image_src" type="image/gif" href="/assets/thumb.gif" />
+  
+<script src="http://127.0.0.1:5678/livereload.js"></script></head>
+
+
+  <body style="background-color: #f2f2f2">
+
+    <header class="site-header">
+    <a href="#" class="button button--nav" id="openmenu">
+    <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 100 100">
+        <line x1="27.6" y1="35.3" x2="72.4" y2="35.3"/>
+        <line x1="27.6" y1="50.6" x2="72.4" y2="50.6"/>
+        <line x1="27.6" y1="66" x2="72.4" y2="66"/>
+    </svg></span>
+    </a>
+    <a class="site-header__logo" href="/">
+        <div class="site-header__logoanim" id="logo_anim"></div>
+    </a>
+</header>
+
+<nav class="navigation" id="menu">
+    <div class="navigation__bg"></div>
+    <ul class="navigation__list">
+    <li class="navigation__item">
+        <a class="navigation__link menu-work" href="/work">Work</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">r</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-about" href="/about">About</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">o</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-curiosities" href="/curiousities">Curiosities</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">u</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-contact" href="/contact">Contact</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">n</span>
+    </li>
+</ul>
+
+<video class="navigation__video" 
+    poster="/assets/intro-knappfilm1-poster.jpg"
+    autoplay muted playsinline>
+    <source src="/assets/intro-knappfilm1.mp4">
+    <img src="/assets/intro-knappfilm1-poster.jpg">
+</video>
+
+</nav>
+
+ 	  <div id="barba-wrapper">
+    	<div class="site-content barba-container" data-namespace="tanumstrand">
+        	<article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	
+		
+			<style>
+				.hero--tanumstrand {
+					background-image: url(/assets/work/tanumstrand/hero.jpg);
+				}
+				@media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
+					.hero--tanumstrand {
+						background-image: url(/assets/work/tanumstrand/hero@2x.jpg);
+					}
+				}
+			</style>
+		
+	
+	<div class="hero hero--tanumstrand background-image" id="work_tanumstrand"  style="background-color: #7e93b0">
+		
+		<header class="hero__header">
+		
+			<h1 itemprop="name headline">
+				TanumStrand
+			</h1>
+			<h2>A year by the sea</h2>
+			
+			
+		</header>
+
+		
+		
+
+		<div class="metabox column__wrapper">
+			<div class="column column--vertical">
+				<strong class="meta-description">Client:</strong>
+				<span class="meta">Tanumstrand</span>
+			</div>
+			<div class="column column--vertical">
+				<strong class="meta-description">Project:</strong>
+				<span class="meta">Film production</span>
+			</div>
+			
+		</div>
+
+    </div>
+
+	
+	<div class="ingress ingress--tanumstrand">
+		<p>TanumStrand is a hotel and retreat center on Sweden’s west coast, close-ish to the Norwegian border. With its granite archipelagos, misty mornings and gently rocking rowboats, it’s an idyll that would make any Swedish ex-pat weep.</p>
+
+
+		
+		<a class="metabutton" href="mailto:joakim.hanner@fullystudios.se">
+			Author: <span>Joakim Hanner</span>
+		</a>
+		
+		
+	</div>
+	
+
+	<main itemprop="articleBody">
+		
+    <section class="sectionspacing box box--center">
+        <h3 id="recently-tanumstrand-gave-itself-a-facelift-they-updated-their-spa-and-revitalized-their-restaurant-and-even-overhauled-their-website">Recently TanumStrand gave itself a facelift. They updated their spa and revitalized their restaurant, and even overhauled their website.</h3>
+<p>In this season of transformation, they wanted us to produce a few commercials to spotlight their fresh new look and set the tone as a place of rest and rejuvenation.</p>
+
+<p>Rather than focus on advertising their new facilities, I wanted to create an immersive experience that would stir longing in the viewer. In other words: we weren’t going to sell the spa. We were going to sell the peace.</p>
+
+<p>We ended up doing 4 films in total – Spring, Summer, Fall, and Winter – with each focusing on the festive hallmarks of the season. These mini narratives of tranquility performed exceptionally well as commercials, and aired as a 15 second spot on TV 4 and a 20 second spot on the web.</p>
+
+    </section>
+
+
+
+<div class="sectionspacing">
+
+    
+        <section class="boxtext boxtext--frame center">
+            <h2 id="spring">Spring</h2>
+
+<p><strong>We began with Spring, a season when the earth is shaking itself out of its slumber, and people are doing the same. TanumStrand had renovated their gym so I wanted to point in that direction, but have the mood be more expansive and peaceful. Hence the outdoor training scenes.</strong></p>
+
+        </section>
+        <div class="sectionspacing-small">
+            
+
+        </div>
+    
+
+    
+    <section class="imagegrid">
+        
+        <div class="imagegrid__image">
+            <img class="image"
+                alt="A lorem ipsum image"
+                width="1440" height="1653"
+                src="/assets/work/tanumstrand/storyboard-01_720.jpg" 
+                srcset="/assets/work/tanumstrand/storyboard-01.jpg 1440w,
+                        /assets/work/tanumstrand/storyboard-01_720.jpg 720w"
+                sizes="100vw">
+        </div>
+        
+        <div class="imagegrid__image">
+            <img class="image"
+                alt="A lorem ipsum image"
+                width="1440" height="1653"
+                src="/assets/work/tanumstrand/storyboard-02_720.jpg" 
+                srcset="/assets/work/tanumstrand/storyboard-02.jpg 1440w,
+                        /assets/work/tanumstrand/storyboard-02_720.jpg 720w"
+                sizes="100vw">
+        </div>
+        
+        <div class="imagegrid__image">
+            <img class="image"
+                alt="A lorem ipsum image"
+                width="1440" height="1653"
+                src="/assets/work/tanumstrand/storyboard-03_720.jpg" 
+                srcset="/assets/work/tanumstrand/storyboard-03.jpg 1440w,
+                        /assets/work/tanumstrand/storyboard-03_720.jpg 720w"
+                sizes="100vw">
+        </div>
+        
+    </section>
+    
+
+    
+    <div class="video">
+        <iframe src="https://player.vimeo.com/video/162523357" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    
+
+</div>
+
+
+
+<div class="sectionspacing">
+
+    
+        <section class="boxtext boxtext--frame boxtext--frame--curiosities center">
+            <h2 id="summer">Summer</h2>
+
+<p><strong>For the summer film, we wanted to focus on warmth (always in fleeting supply in Sweden) and its relaxing effects.</strong></p>
+
+        </section>
+        <div class="sectionspacing-small">
+            <p>Warmth is a key element at the spa, and TanumStrand’s new facilities were close enough to completion that they could be filmed. I had to get clever in some instances – the indoor hot tub, for example, didn’t have water in it yet.</p>
+
+<p>Like in the other three films, water is present throughout, even if it is just out of sight. In the yoga studio you can’t see the ocean, but you sense it is there beyond the frame.</p>
+
+        </div>
+    
+
+    
+
+    
+    <div class="video">
+        <iframe src="https://player.vimeo.com/video/221864932" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    
+
+</div>
+
+
+
+<div class="sectionspacing">
+
+    
+        <section class="boxtext boxtext--frame boxtext--frame--people center">
+            <h2 id="fall">Fall</h2>
+
+<p><strong>Late summer/early fall is the season for crayfish. Crayfish parties signal a good-bye to summer and kick-off for the coming of crispy weather. So for this film I thought it only natural to focus on this iconic tradition, which would provide some rich imagery.</strong></p>
+
+        </section>
+        <div class="sectionspacing-small">
+            <p>The scenes focus on an activity that TanumStrand does indeed offer – going out in a fishing boat to catch crayfish and having a seafood feast onboard.</p>
+
+<p>As soon as we knew that we were going to film at sea, I felt it was important to get the sky shot of the boat. I brought in a drone to help get this bird’s eye view. The results were, of course, majestic.</p>
+
+<p>I think this film imparts what I was aiming for in terms of feeling: that special mix of adventurous thrill and contented calm that being on the sea provides.</p>
+
+        </div>
+    
+
+    
+
+    
+    <div class="video">
+        <iframe src="https://player.vimeo.com/video/221864459" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    
+
+</div>
+
+
+
+<div class="sectionspacing">
+
+    
+        <section class="boxtext boxtext--frame boxtext--frame--dark center">
+            <h2 id="winter">Winter</h2>
+
+<p><strong>For the Winter film, the immediate focus was obvious: Christmas. TanumStrand puts together an awesome julbord, especially for company retreats.</strong></p>
+
+        </section>
+        <div class="sectionspacing-small">
+            <p>But in terms of a more subtle theme used in the composition of the scenes, I played with the concept of “fire and ice.” Nearly every scene features cold meeting hot. From the sauna to the winter sea. On the cold patio, tucked near the fire with warm glögg in hand.</p>
+
+<p>In terms of music, I had a score specially created for the first three films, which conveyed the peacefulness of the place, along with a touch of melancholy and tingling crescendo. For the Winter film, I contacted the composer to see if he could give the same score a Christmas-y feeling. He delivered with jingle bells and choir voices galore.</p>
+
+        </div>
+    
+
+    
+    <section class="imagegrid">
+        
+        <div class="imagegrid__image">
+            <img class="image"
+                alt="A lorem ipsum image"
+                width="1440" height="1653"
+                src="/assets/work/tanumstrand/storyboard-04_720.jpg" 
+                srcset="/assets/work/tanumstrand/storyboard-04.jpg 1440w,
+                        /assets/work/tanumstrand/storyboard-04_720.jpg 720w"
+                sizes="100vw">
+        </div>
+        
+        <div class="imagegrid__image">
+            <img class="image"
+                alt="A lorem ipsum image"
+                width="1440" height="1653"
+                src="/assets/work/tanumstrand/storyboard-05_720.jpg" 
+                srcset="/assets/work/tanumstrand/storyboard-05.jpg 1440w,
+                        /assets/work/tanumstrand/storyboard-05_720.jpg 720w"
+                sizes="100vw">
+        </div>
+        
+        <div class="imagegrid__image">
+            <img class="image"
+                alt="A lorem ipsum image"
+                width="1440" height="1653"
+                src="/assets/work/tanumstrand/storyboard-06_720.jpg" 
+                srcset="/assets/work/tanumstrand/storyboard-06.jpg 1440w,
+                        /assets/work/tanumstrand/storyboard-06_720.jpg 720w"
+                sizes="100vw">
+        </div>
+        
+    </section>
+    
+
+    
+    <div class="video">
+        <iframe src="https://player.vimeo.com/video/221864611" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    
+
+    <div class="sectionspacing-small center">
+        <h2 id="thats-a-wrap-folks">That’s a wrap, folks.</h2>
+
+        <p>
+            <a class="metabutton" href="mailto:joakim.hanner@fullystudios.se">
+                Author: <span>Joakim Hanner</span>
+            </a>
+        </p>
+    </div>
+
+</div>
+	</main>
+
+</article>
+
+<div class="boxgrid">
+	<h2 class="boxgrid__header h4">Check out our other projects</h2>
+
+	
+	
+	
+
+	
+
+	
+
+	<a class="boxgrid__box" href="/work/kappahl/">
+		<div class="image-loader" style="background: #cd627e"> 
+			<img src="/assets/work/kappahl/hero.jpg" alt="KappAhl">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>KappAhl</h3>
+			<p>The developer’s dilemma</p>
+		</div>
+	</a>
+
+	<a class="boxgrid__box" href="/work/owd-bob/">
+		<div class="image-loader" style="background: #c9cba3"> 
+			<img src="/assets/work/owd-bob/hero.jpg" alt="Owd Bob">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>Owd Bob</h3>
+			<p>The most elusive print shop in the world</p>
+		</div>
+	</a>
+</div>
+
+
+    	</div>
+    </div>
+
+    <footer class="column__wrapper footer">
+
+    <div class="column">
+        <p><strong>Fully Studios</strong></p>
+        <p>Victoriapassagen,<br>Södra Larmgatan 14,<br>411 16 Göteborg<br>
+        <a href="https://www.google.se/maps/dir//Fully+Flared+Digital+Agency,+Victoriapassagen,+S%C3%B6dra+Larmgatan+14,+411+16+G%C3%B6teborg/@57.7032779,11.9651249,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464ff365f9958667:0xc960c81a24202e95!2m2!1d11.9656134!2d57.7033354">Navigate here</a>
+        </p>
+    </div>
+ 
+    <div class="column">
+        <p><strong>Contact us</strong></p>
+        <p>
+            <a href="tel:+46 738 07 30 72">+46 738 07 30 72</a><br>
+            <a href="mailto:hi@fullystudios.se">hi@fullystudios.se</a>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><strong>Follow us</strong></p>
+        <p>
+            <a href="https://www.facebook.com/Fully-Flared-Digital-Agency-150488108297019/?ref=ts&fref=ts">Facebook</a><br>
+            <a href="https://www.instagram.com/fullystudios/">Instagram</a><br>
+            <a href="https://vimeo.com/fullystudios">Vimeo</a><br>
+            <a href="https://github.com/fullystudios">Github</a><br>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><img src="/assets/fully-studios-logo.svg" alt="Fully Studios" /></p>
+    </div>
+
+</footer>
+
+<script src="/assets/bundles/bundle.js"></script>
+
+ 
+
+
+
+ <nav style="display: none">
+    <span>Placeholder navigation during development</span>
+    <ul>
+        <li><a style="font-size: 1em" href="http://localhost:4000">Home</a></li>
+        
+        
+        <li><a style="font-size: 1em" href="/about/">About</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/contact/">Contact us</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/curiousities/">Curiousities</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/design-system/">Design System</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a style="font-size: 1em" href="/building-process/">The process of building this site</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/work/">Work</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Fira Mono:400,700']
+        }
+      });
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #000000">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Click or Treat</title>
+  <meta name="description" content="One day I got a call from DDB, an agency we collaborate with quite regularly. They usually get in contact when they need an interactive banner or campaign si...">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/work/click-or-treat/">
+  <link rel="alternate" type="application/rss+xml" title="Fully Studios" href="http://localhost:4000/feed.xml">
+
+  <!--<script type="text/javascipt" src="/js/jquery-2.2.4.min.js"></script>-->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script> -->
+  <!-- <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script type="text/javascipt" src="/js/picturefill.min.js" async></script> -->
+  <!--<script type="text/javascipt" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.6.8/bodymovin_light.min.js" async></script>-->
+
+  <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="image_src" type="image/gif" href="/assets/thumb.gif" />
+  
+<script src="http://127.0.0.1:5678/livereload.js"></script></head>
+
+
+  <body style="background-color: #000000">
+
+    <header class="site-header">
+    <a href="#" class="button button--nav" id="openmenu">
+    <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 100 100">
+        <line x1="27.6" y1="35.3" x2="72.4" y2="35.3"/>
+        <line x1="27.6" y1="50.6" x2="72.4" y2="50.6"/>
+        <line x1="27.6" y1="66" x2="72.4" y2="66"/>
+    </svg></span>
+    </a>
+    <a class="site-header__logo" href="/">
+        <div class="site-header__logoanim" id="logo_anim"></div>
+    </a>
+</header>
+
+<nav class="navigation" id="menu">
+    <div class="navigation__bg"></div>
+    <ul class="navigation__list">
+    <li class="navigation__item">
+        <a class="navigation__link menu-work" href="/work">Work</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">r</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-about" href="/about">About</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">o</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-curiosities" href="/curiousities">Curiosities</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">u</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-contact" href="/contact">Contact</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">n</span>
+    </li>
+</ul>
+
+<video class="navigation__video" 
+    poster="/assets/intro-knappfilm1-poster.jpg"
+    autoplay muted playsinline>
+    <source src="/assets/intro-knappfilm1.mp4">
+    <img src="/assets/intro-knappfilm1-poster.jpg">
+</video>
+
+</nav>
+
+ 	  <div id="barba-wrapper">
+    	<div class="site-content barba-container" data-namespace="click-or-treat">
+        	<article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+	
+	
+		
+			<style>
+				.hero--click-or-treat {
+					background-image: url(/assets/work/click-or-treat/hero.jpg);
+				}
+				@media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
+					.hero--click-or-treat {
+						background-image: url(/assets/work/click-or-treat/hero@2x.jpg);
+					}
+				}
+			</style>
+		
+	
+	<div class="hero hero--click-or-treat background-image" id="work_click-or-treat"  style="background-color: #000000">
+		
+		<header class="hero__header">
+		
+			<h1 itemprop="name headline">
+				Click or Treat
+			</h1>
+			<h2>Mission: Scare Gothenburg</h2>
+			
+			
+		</header>
+
+		
+		
+
+		<div class="metabox column__wrapper">
+			<div class="column column--vertical">
+				<strong class="meta-description">Client:</strong>
+				<span class="meta">DDB / Liseberg</span>
+			</div>
+			<div class="column column--vertical">
+				<strong class="meta-description">Project:</strong>
+				<span class="meta">Campaign</span>
+			</div>
+			
+			<div class="column column--vertical">
+				<a href="#open-cot" class="button" id="click-or-treat_button"><span>Try the demo</span></a>
+			</div>
+			
+		</div>
+
+    </div>
+
+	
+	<div class="ingress ingress--click-or-treat">
+		<p>One day I got a call from DDB, an agency we collaborate with quite regularly. They usually get in contact when they need an interactive banner or campaign site, as we’re well known around town for our web animation savvy.</p>
+
+<p>This time they wanted to enlist our help with a very specific mission: to scare Göteborg.</p>
+
+
+		
+		<a class="metabutton" href="mailto:jonathan.asp@fullystudios.se">
+			Author: <span>Jonathan David Asp</span>
+		</a>
+		
+		
+	</div>
+	
+
+	<main itemprop="articleBody">
+		
+    <style>
+        #click-or-treat_bg {
+            padding-bottom: 120px;
+            background-image: url(../../assets/work/click-or-treat/liseberg-halloween.jpg);
+            background-position: 100% 90%;
+        }
+        @media (min-width: 800px) {
+            #click-or-treat_bg {
+                padding-bottom: 240px;
+                background-image: url(../../assets/work/click-or-treat/liseberg-halloween@2x.jpg);
+            }
+        }
+    </style>
+    <div class="background-image background-image--contain background-image--largepadding invert" id="click-or-treat_bg">
+        <p><span style="display: block; max-width: 30em">Their aim was to pull off a digital marketing stunt that would drive foot traffic to the Halloween festivities at Liseberg. To do this, they were toying with the question how to make a traditional “boo!” kind of scare go digital.
+</span></p>
+    </div>
+
+
+
+    <div class="box box--right box--people">
+        <h2 id="the-idea">The idea</h2>
+
+<h3 id="jonas-and-i-went-over-to-ddbs-office-the-next-day-to-flesh-out-the-idea-which-was-this-to-scare-the-lights-out-of-people-when-theyre-reading-what-they-think-is-a-normal-web-article-and-have-a-terrifying-facescream-pop-up-out-of-nowhere">Jonas and I went over to DDB’s office the next day to flesh out the idea, which was this: to scare the lights out of people when they’re reading (what they think is) a normal web article and have a terrifying face/scream pop up out of nowhere.</h3>
+
+<p>The idea was brilliant and to do it any justice, the execution had to be perfect. We completely cleared our schedules to make this thing come aaaalive.</p>
+
+<p>In the process, we learned that scaring someone in the digital realm shares the same principles as in the real world.</p>
+
+    </div>
+
+
+
+    <div class="sectionspacing">
+        <h2 class="center invert">How to scare someone</h2>
+        <div class="grid grid--space grid--padding invert">
+            <div class="grid__column1-2">
+                <h3 id="1-find-a-great-hiding-place">1. Find a great hiding place</h3>
+
+<p><strong>The more unsuspecting your target is, the better.</strong></p>
+
+<p>In this case the hiding place would be in the webpages of Nöjesbladet, Sweden’s largest entertainment website.</p>
+
+<p>We worked extensively with Nöjesbladet’s technical team to embed the scare-code on every article that appeared on their front page. All that was needed to trigger it was the addition of a few characters at the end of article’s URL. We covered our footprints well.</p>
+
+<p>The best bit was the screen override would happen when the viewer scrolled halfway down, so they’d be distracted by reading when AAHHH THE HORROR!</p>
+
+            </div>
+            <div class="grid__column2-2 flexcenter">
+                <img class="image"
+                    alt="/article21463075.ab?bu=uu"
+                    width="1440" height="1653"
+                    src="/assets/work/click-or-treat/bu-url.jpg" 
+                    srcset="/assets/work/click-or-treat/bu-url@2x.jpg 1440w,
+                            /assets/work/click-or-treat/bu-url.jpg 720w"
+                    sizes="100vw">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <style>
+        #section4_bg .grid__column1-2 {
+            background-image: url(../../assets/work/click-or-treat/laptop_720.jpg);
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: 0% 100%;
+            padding-bottom: 20em;
+            height: 30vh;
+        }
+        @media (min-width: 800px) {
+            #section4_bg .grid__column1-2 {
+                background: none;
+                height: auto;
+            }
+            #section4_bg {
+                background-image: url(../../assets/work/click-or-treat/laptop.jpg);
+                background-position: 0% 100%;
+                padding-bottom: 10vw;
+            }
+        }
+    </style>
+
+    <div class="grid grid--space invert background-image background-image--contain" 
+        id="section4_bg">
+        <div class="grid__column1-2"
+            role="img"
+            aria-label=""
+            title="">
+        </div>
+        <div class="grid__column2-2">
+            <h3 id="2-dont-give-yourself-away-early">2. Don’t give yourself away early</h3>
+
+<p>Ssssshhhhh.</p>
+
+<p>The loading had to be just right. The video clip and the audio had to come at precisely the same time – one couldn’t come before the other. Not even a millisecond of a glitch.</p>
+
+<p>When working across multiple different browsers and devices, getting this perfect took some doing.</p>
+
+<p>The video was too heavy on bandwidth so to speed up the loading time, we divided the video into an image sequence and removed a few frames. This also solved the problem of display on smartphones so users wouldn’t need to press “play” to show the video.</p>
+
+        </div>
+    </div>
+
+
+
+    <div class="sectionspacing invert">
+        <h3 id="3-look-scary-sound-scary-be-scary">3. Look scary. Sound scary. Be scary.</h3>
+
+<p>Go all out.</p>
+
+<p>The video DDB/Liseberg supplied us was perfect – a very creepy joker man accompanied by a blood-curdling scream. Surprising and scary, but not overly grotesque. For the days we were working on this project, the office resounded with shrieks around every 5 minutes.</p>
+
+    </div>
+
+
+
+    <img src="../../assets/work/click-or-treat/buu_sprite.jpg" alt="Image sprite of a scare dude" class="image">
+    <style>
+        #section6_bg {
+            background-image: url(../../assets/work/click-or-treat/buu.jpg);
+            min-height: calc(3em + 100vh);
+            background-size: contain;
+            background-position: top center;
+        }
+    </style>
+    <div class="background-image flexend" id="section6_bg">
+        <div class="box box--business box--center">
+            <h2 id="success">Success!</h2>
+
+<p>This prank-PR turned out to be a huge hit. Ten thousand scares were recorded in the first 48 hours. And by the end, 200,000 people had visited – twice more than expected. DDB &amp; Fully even shared a prize for it, winning the Bronze Guldnyckeln.</p>
+
+        </div>
+    </div>
+
+
+
+<div class="grid grid--space grid--padding">
+    <div class="grid__column-large">
+        <img class="image"
+            alt="Lorem ipsum"
+            width="1726" height="1028"
+            src="/assets/work/click-or-treat/halloween_laptop@2x.jpg" 
+            srcset="/assets/work/click-or-treat/halloween_laptop@2x.jpg 1724w,
+                    /assets/work/click-or-treat/halloween_laptop.jpg 863w"
+            sizes="(min-width: 580px) 50vw,
+                100vw">
+    </div>
+    <div class="grid__column-small">
+        <img class="image"
+            alt="Lorem ipsum"
+            width="1726" height="1028"
+            src="/assets/work/click-or-treat/halloween_mobile@2x.jpg" 
+            srcset="/assets/work/click-or-treat/halloween_mobile@2x.jpg 1724w,
+                    /assets/work/click-or-treat/halloween_mobile.jpg 863w"
+            sizes="(min-width: 580px) 50vw,
+                100vw">
+    </div>
+</div>
+
+
+
+    <div class="invert">
+        <p>It was fun for us to return to our roots, in a way. Before Fully started doing HTML websites, we were famous for flash sites. We had so much fun with it. But there were a lot of sites that went totally overboard, and it was understandable that the Internet turned its back on animation for a period of years. But now it can be really powerful to introduce it in small and tasteful doses. It’s something fresh and unexpected, creating awesome results when deployed as a marketing tactic.</p>
+
+<p>Granted this project wasn’t a flash animation (we coded it with HTML/Javascript), but it very well could have been. I think we’ll see more and more animation on the web, programmed in all sorts of ways. The gif renaissance is proof that people are hungry for it again.</p>
+
+        <p>
+            <a class="metabutton" href="mailto:jonathan.asp@fullystudios.se">
+                Author: <span>Jonathan David Asp</span>
+            </a>
+        </p>
+    </div>
+
+
+<style>
+    #lisebergScareFrame {
+        position: fixed;
+        top: 0; right: 0; bottom: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: 100;
+    }
+</style>
+<iframe class="hidden" id="lisebergScareFrame" src="/assets/work/click-or-treat/click-or-treat.html"></iframe>
+
+	</main>
+
+</article>
+
+<div class="boxgrid">
+	<h2 class="boxgrid__header h4">Check out our other projects</h2>
+
+	
+	
+	
+
+	
+
+	
+
+	<a class="boxgrid__box" href="/work/papricaklubben/">
+		<div class="image-loader" style="background: #80b568"> 
+			<img src="/assets/work/papricaklubben/hero.jpg" alt="Paprica&shy;klubben">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>Paprica&shy;klubben</h3>
+			<p>An interactive world for ICAs children club</p>
+		</div>
+	</a>
+
+	<a class="boxgrid__box" href="/work/collector/">
+		<div class="image-loader" style="background: #2a153f"> 
+			<img src="/assets/work/collector/hero.jpg" alt="Collector">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>Collector</h3>
+			<p>Lorem ipsum</p>
+		</div>
+	</a>
+</div>
+
+
+    	</div>
+    </div>
+
+    <footer class="column__wrapper footer">
+
+    <div class="column">
+        <p><strong>Fully Studios</strong></p>
+        <p>Victoriapassagen,<br>Södra Larmgatan 14,<br>411 16 Göteborg<br>
+        <a href="https://www.google.se/maps/dir//Fully+Flared+Digital+Agency,+Victoriapassagen,+S%C3%B6dra+Larmgatan+14,+411+16+G%C3%B6teborg/@57.7032779,11.9651249,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464ff365f9958667:0xc960c81a24202e95!2m2!1d11.9656134!2d57.7033354">Navigate here</a>
+        </p>
+    </div>
+ 
+    <div class="column">
+        <p><strong>Contact us</strong></p>
+        <p>
+            <a href="tel:+46 738 07 30 72">+46 738 07 30 72</a><br>
+            <a href="mailto:hi@fullystudios.se">hi@fullystudios.se</a>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><strong>Follow us</strong></p>
+        <p>
+            <a href="https://www.facebook.com/Fully-Flared-Digital-Agency-150488108297019/?ref=ts&fref=ts">Facebook</a><br>
+            <a href="https://www.instagram.com/fullystudios/">Instagram</a><br>
+            <a href="https://vimeo.com/fullystudios">Vimeo</a><br>
+            <a href="https://github.com/fullystudios">Github</a><br>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><img src="/assets/fully-studios-logo.svg" alt="Fully Studios" /></p>
+    </div>
+
+</footer>
+
+<script src="/assets/bundles/bundle.js"></script>
+
+ 
+
+
+
+ <nav style="display: none">
+    <span>Placeholder navigation during development</span>
+    <ul>
+        <li><a style="font-size: 1em" href="http://localhost:4000">Home</a></li>
+        
+        
+        <li><a style="font-size: 1em" href="/about/">About</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/contact/">Contact us</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/curiousities/">Curiousities</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/design-system/">Design System</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a style="font-size: 1em" href="/building-process/">The process of building this site</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/work/">Work</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Fira Mono:400,700']
+        }
+      });
+    </script>
+
+  </body>
+
+</html>

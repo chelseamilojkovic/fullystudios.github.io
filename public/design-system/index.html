@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Design System</title>
+  <meta name="description" content="Fully Studios - This site is under construction.">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/design-system/">
+  <link rel="alternate" type="application/rss+xml" title="Fully Studios" href="http://localhost:4000/feed.xml">
+
+  <!--<script type="text/javascipt" src="/js/jquery-2.2.4.min.js"></script>-->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script> -->
+  <!-- <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script type="text/javascipt" src="/js/picturefill.min.js" async></script> -->
+  <!--<script type="text/javascipt" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.6.8/bodymovin_light.min.js" async></script>-->
+
+  <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="image_src" type="image/gif" href="/assets/thumb.gif" />
+  
+<script src="http://127.0.0.1:5678/livereload.js"></script></head>
+
+
+  <body >
+
+    <header class="site-header">
+    <a href="#" class="button button--nav" id="openmenu">
+    <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 100 100">
+        <line x1="27.6" y1="35.3" x2="72.4" y2="35.3"/>
+        <line x1="27.6" y1="50.6" x2="72.4" y2="50.6"/>
+        <line x1="27.6" y1="66" x2="72.4" y2="66"/>
+    </svg></span>
+    </a>
+    <a class="site-header__logo" href="/">
+        <div class="site-header__logoanim" id="logo_anim"></div>
+    </a>
+</header>
+
+<nav class="navigation" id="menu">
+    <div class="navigation__bg"></div>
+    <ul class="navigation__list">
+    <li class="navigation__item">
+        <a class="navigation__link menu-work" href="/work">Work</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">r</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-about" href="/about">About</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">o</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-curiosities" href="/curiousities">Curiosities</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>            
+        <span class="navigation__overlay" aria-hidden="true">u</span>
+    </li>
+    <li class="navigation__item">
+        <a class="navigation__link menu-contact" href="/contact">Contact</a>
+        <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="298" height="30" viewBox="0 0 298 30"><path d="M8,12c15.78,0,15.78,16,31.56,16S55.33,12,71.11,12s15.78,16,31.55,16,15.78-16,31.55-16S150,28,165.77,28s15.78-16,31.56-16,15.78,16,31.56,16,15.78-16,31.56-16S276.22,28,292,28" transform="translate(-1 -5)"/></svg>
+        <span class="navigation__overlay" aria-hidden="true">n</span>
+    </li>
+</ul>
+
+<video class="navigation__video" 
+    poster="/assets/intro-knappfilm1-poster.jpg"
+    autoplay muted playsinline>
+    <source src="/assets/intro-knappfilm1.mp4">
+    <img src="/assets/intro-knappfilm1-poster.jpg">
+</video>
+
+</nav>
+
+ 	  <div id="barba-wrapper">
+    	<div class="site-content barba-container" data-namespace="home">
+        	<article class="page">
+  
+  
+		
+			<style>
+				.hero-- {
+					background-image: url(/assets/../assets/introfilmen-poster.jpg);
+				}
+				@media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
+					.hero-- {
+						background-image: url(/assets/../assets/introfilmen-poster.jpg);
+					}
+				}
+			</style>
+		
+	
+	<div class="hero hero-- background-image " id="work_">
+		<header class="hero__header hyphenate">
+			
+			<h1 itemprop="name headline">
+				Design System
+			</h1>
+			
+			
+		</header>
+
+		
+		
+	</div>
+
+	<div>
+		<header class="ds-header" style="margin-top: 0">
+  <h2 id="colors">Colors</h2>
+</header>
+
+<div class="c-signal-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="signal---5f11e8">signal - <code class="highlighter-rouge">#5F11E8</code></h3>
+
+  <p>This color will be the main association with Fully. A strong signal that shows tech and takes place.</p>
+
+</div>
+
+<div class="c-people-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="people---ffc1b4">people - <code class="highlighter-rouge">#FFC1B4</code></h3>
+
+  <p>This color stands for the personal side of Fully. Things that describe people or personal things uses this color.</p>
+
+</div>
+
+<div class="c-business-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="business---7bd75e">business - <code class="highlighter-rouge">#7BD75E</code></h3>
+
+  <p>This color is used for business inqueries and other parts concerning contact with client.</p>
+
+</div>
+
+<div class="c-curiosities-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="curiosities---ffde7f">curiosities - <code class="highlighter-rouge">#FFDE7F</code></h3>
+
+  <p>This color primarily for the current and constant curiosity, but also for explorations and ideas.</p>
+
+</div>
+
+<div class="c-metal-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="metal---666666">metal - <code class="highlighter-rouge">#666666</code></h3>
+
+  <p>This color is mainly here because of Joakim and his ocult ways :) No in all seriousness this color is a good option to use when we don’t want to go all black and gives a softer look to texts.</p>
+
+</div>
+
+<div class="c-light-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="light---f8f8f8">light - <code class="highlighter-rouge">#f8f8f8</code></h3>
+
+  <p>This color is used for backgrounds and such. This light grey gives a small contrast to white but stil enough to be usefull and nice and light.</p>
+
+</div>
+
+<div class="c-white-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="white---ffffff">white - <code class="highlighter-rouge">#ffffff</code></h3>
+
+  <p>Just whit. Not much to say here. A very usefull color in many situations.</p>
+
+</div>
+
+<div class="c-dark-bg" style="padding-top: 30px; padding-bottom: 30px">
+
+  <h3 id="dark---0a2a4f">dark - <code class="highlighter-rouge">#0A2A4F</code></h3>
+
+  <p>Use this on dark text on lighter backgrounds. But make sure the contrast is good.</p>
+
+</div>
+
+<header class="ds-header">
+  <h2 id="typography">Typography</h2>
+  <p>Headlines, textblock etc.</p>
+</header>
+
+<h1 id="h1-headline">H1 headline</h1>
+
+<h2 id="h2-headline">H2 headline</h2>
+
+<h3 id="h3-headline">H3 headline</h3>
+
+<h3 id="h4-headline">H4 headline</h3>
+
+<h4 id="h5-headline">H5 headline</h4>
+
+<h5 id="h6-headline">H6 headline</h5>
+
+<p>Paragraph text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maiores hic quo optio alias odit voluptas debitis autem voluptate, facilis quaerat numquam, porro maxime repellendus sapiente a illum eius adipisci.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.</p>
+
+<p class="ingress">
+Ingress Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ip`um cupiditate.
+</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ingress"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<header class="ds-header">
+  <h2 id="buttons">Buttons</h2>
+</header>
+
+<p>Standard button:
+<a class="button" href="#"><span>Explore</span></a></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Explore<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+<div class="c-signal-bg" style="padding: 4em">
+  <p>Inverted button:
+<a class="button button--inv" href="#"><span>Explore</span></a>
+</p>
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--inv"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Explore<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</code></pre>
+  </div>
+</div>
+<p><br />
+Link button:
+<a href="#" class="link link--next"><span>View all cases</span></a></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link link--next"</span><span class="nt">&gt;&lt;span&gt;</span>View all cases<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</code></pre>
+</div>
+
+<div class="c-signal-bg" style="padding: 4em">
+  <p>Inverted link:
+<a href="#" class="link link--next link--invert"><span>View all cases</span></a>
+</p>
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"link link--next link--invert"</span><span class="nt">&gt;&lt;span&gt;</span>View all cases<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+</code></pre>
+  </div>
+</div>
+<p><br /></p>
+
+<header class="ds-header">
+  <h2 id="boxes">Boxes</h2>
+  <p>Boxes with different dropshadows for text and images.</p>
+</header>
+
+<div class="box">
+
+  <h2 id="the-secret-clubhouse">The secret clubhouse</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.</p>
+
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+  </div>
+
+</div>
+
+<div class="box box--right box--people" style="background-image:url(http://placekitten.com/g/1920/600); color:white">
+
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box box--right box--people"</span> <span class="na">style=</span><span class="s">"background-image:url(http://placekitten.com/g/1920/600)"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+  </div>
+</div>
+
+<div class="box box--business">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.</p>
+
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box box--business"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+  </div>
+</div>
+
+<div class="box box--right box--curiosities">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.</p>
+
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box box--right box--curiosities"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+  </div>
+</div>
+
+<div class="box box--metal">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.</p>
+
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box box--metal"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+  </div>
+</div>
+
+<div class="box box--right box--up">
+
+  <p>Make the shadow go upwards instead by using the class <code class="highlighter-rouge">box--up</code></p>
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box box--right box--up"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre>
+  </div>
+</div>
+
+<div class="box box--bgsignal">
+  <p>Also works with <code class="highlighter-rouge">.box--bgpeople</code>, <code class="highlighter-rouge">.box--bgcuriosities</code>, <code class="highlighter-rouge">.box--bgbusiness</code> and  <code class="highlighter-rouge">.box--bgmetal</code></p>
+
+  <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box box--metal"</span><span class="nt">&gt;</span>
+</code></pre>
+  </div>
+</div>
+
+<header class="ds-header">
+  <h2 id="boxgrid">boxgrid</h2>
+  <p>a grid with images and texts. Used in “other projects”</p>
+</header>
+
+<div class="boxgrid">
+<h2 class="boxgrid__header h4">Check out our other projects</h2>
+<figure class="boxgrid__box">
+    
+    <div class="image-loader" style="background: #ccc"> 
+        <img src=" http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+    </div>
+    <figcaption class="boxgrid__caption">
+        <h3>A beautiful cat</h3>
+        <p>lorem ipsum</p>
+    </figcaption>
+</figure>
+
+<figure class="boxgrid__box">
+    <div class="image-loader" style="background: #c1c1c1">
+        <img src="http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+    </div>
+    <figcaption class="boxgrid__caption">
+        <h3>Another beautiful cat</h3>
+        <p>Lorem ipsum dolem es simet</p>
+    </figcaption>
+</figure>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"boxgrid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"boxgrid__header h4"</span><span class="nt">&gt;</span>Boxgrid title<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"boxgrid__box"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-loader"</span> <span class="na">style=</span><span class="s">"background: #c1c1c1"</span><span class="nt">&gt;</span> <span class="c">&lt;!--Change this color to an average color from the image--&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">""</span> <span class="na">alt=</span><span class="s">"Fig title"</span><span class="nt">&gt;</span>	
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"boxgrid__caption"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3&gt;</span>Fig title<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Fig Description<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/figcaption&gt;</span>
+    <span class="nt">&lt;/figure&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="a-compat-boxgrid">A compat boxgrid:</h3>
+
+<div class="boxgrid boxgrid--compact">
+<h2 class="boxgrid__header h4">Recent work</h2>
+    <figure class="boxgrid__box">
+        
+        <div class="image-loader" style="background: #ccc"> 
+            <img src=" http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+        </div>
+        <figcaption class="boxgrid__caption">
+            <h3 class="h4">A beautiful cat</h3>
+            <p>lorem ipsum</p>
+            <a href="#" class="button"><span>View case</span></a>
+        </figcaption>
+    </figure>
+    <figure class="boxgrid__box">
+        <div class="image-loader" style="background: #c1c1c1">
+            <img src="http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+        </div>
+        <figcaption class="boxgrid__caption">
+            <h3 class="h4">Another beautiful cat</h3>
+            <p>Lorem ipsum</p>
+            <a href="#" class="button"><span>View case</span></a>
+        </figcaption>
+    </figure>
+    <figure class="boxgrid__box">
+        <div class="image-loader" style="background: #c1c1c1">
+            <img src="http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+        </div>
+        <figcaption class="boxgrid__caption">
+            <h3 class="h4">Another beautiful cat</h3>
+            <p>Lorem ipsum dolem es simet es lorem ipsum</p>
+            <a href="#" class="button"><span>View case</span></a>
+        </figcaption>
+    </figure>
+    <figure class="boxgrid__box">
+        <div class="image-loader" style="background: #c1c1c1">
+            <img src="http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+        </div>
+        <figcaption class="boxgrid__caption">
+            <h3 class="h4">Another beautiful cat</h3>
+            <p>Lorem ipsum</p>
+            <a href="#" class="button"><span>View case</span></a>
+        </figcaption>
+    </figure>
+    <figure class="boxgrid__box">
+        <div class="image-loader" style="background: #c1c1c1">
+            <img src="http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+        </div>
+        <figcaption class="boxgrid__caption">
+            <h3 class="h4">Lorem ipsum</h3>
+            <p>Lorem ipsum dolem es simet lorem</p>
+            <a href="#" class="button"><span>View case</span></a>
+        </figcaption>
+    </figure>
+    <figure class="boxgrid__box">
+        <div class="image-loader" style="background: #c1c1c1">
+            <img src="http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+        </div>
+        <figcaption class="boxgrid__caption">
+            <h3 class="h4">Another beautiful cat</h3>
+            <p>Lorem ipsum dolem es simet</p>
+            <a href="#" class="button"><span>View case</span></a>
+        </figcaption>
+    </figure>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"boxgrid boxgrid--compact"</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<header class="ds-header">
+  <h2 id="images">images</h2>
+  <p>Load images with style</p>
+</header>
+
+<h3 id="backgrund-image">Fixed ratio image loader</h3>
+
+<div class="image-loader" style="background: #c1c1c1">
+    <img src="http://placekitten.com/g/1440/830" alt="A beautiful cat" />	
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-loader"</span> <span class="na">style=</span><span class="s">"background: #c1c1c1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> 
+    <span class="na">src=</span><span class="s">"http://placekitten.com/g/1440/830"</span>
+    <span class="na">alt=</span><span class="s">"A beautiful cat"</span><span class="nt">&gt;</span>	
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre>
+</div>
+
+<p><br /></p>
+<h3 id="backgrund-image">Backgrund image</h3>
+
+<style>
+    #_bg {
+        background-image: url(../assets/introfilmen-poster.jpg);
+    }
+    @media (min-width: 800px) {
+        #_bg {
+            background-image: url(../assets/introfilmen-poster.jpg);
+        }
+    }
+</style>
+
+<div class="background-image background-image--padding flexcenter invert" id="_bg">
+  <div class="highlighter-rouge"><pre class="highlight"><code>Availible classes:
+.background-image
+.background-image--padding
+.background-image--largepadding
+</code></pre>
+  </div>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+&lt;style&gt;
+    #{{page.slug}}_bg {
+        background-image: url(../assets/introfilmen-poster.jpg);
+    }
+    @media (min-width: 800px) {
+        #{{page.slug}}_bg {
+            background-image: url(../assets/introfilmen-poster.jpg);
+        }
+    }
+&lt;/style&gt;
+&lt;div class="background-image background-image--padding flexcenter invert" id="{{page.slug}}_bg"&gt;
+    &lt;p&gt;Lorem ipsum&lt;/p&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>
+
+<p><br /></p>
+<h3 id="imagegrid">Imagegrid</h3>
+<p>Also works with images 😁</p>
+
+<section class="imagegrid imagegrid--firstlarge">
+	
+	<div class="imagegrid__image">
+		<div class="video">
+			<iframe src="https://player.vimeo.com/video/211438822" width="1920" height="1080" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+	</div>
+        
+
+	<div class="imagegrid__image">
+		<div class="video">
+			<iframe src="https://player.vimeo.com/video/205372936" width="1920" height="1080" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+	</div>
+        
+
+	<div class="imagegrid__image">
+		<div class="video">
+			<iframe src="https://player.vimeo.com/video/162523357" width="1920" height="1080" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+	</div>
+        
+
+	<div class="imagegrid__image">
+		<div class="video">
+			<iframe src="https://player.vimeo.com/video/54016145" width="1920" height="1080" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		</div>
+	</div>
+        
+
+    <div class="imagegrid__image imagegrid__image--two">
+        <img src="../assets/introfilmen-poster.jpg" />
+    </div>
+    <div class="imagegrid__image imagegrid__image--two">
+        <img src="../assets/introfilmen-poster.jpg" />
+    </div>
+</section>
+
+<p>This example takes an array of vimeo video ID's</p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+{% unless page.vimeo_IDs == nil %}
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"imagegrid imagegrid--firstlarge"</span><span class="nt">&gt;</span>
+	{% for video in page.vimeo_IDs %}
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"imagegrid__image"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"video"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"https://player.vimeo.com/video/{{video}}"</span> <span class="na">width=</span><span class="s">"1920"</span> <span class="na">height=</span><span class="s">"1080"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">webkitallowfullscreen</span> <span class="na">mozallowfullscreen</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+		<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	{% endfor %}
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"imagegrid__image imagegrid__image--two"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"imagegrid__image imagegrid__image--two"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+{% endunless %}
+
+</code></pre>
+</div>
+
+<header class="ds-header">
+  <h2 id="layouts">Layouts</h2>
+</header>
+
+<h3 id="imagebox+text">Imagebox + text</h3>
+<p>Example of a custom CSS grid layout using a container with the class `grid`.</p>
+
+<div class="grid grid--space case-highlight">
+  <div class="flexcenter center background-image invert grid__offsetcolumn1-2" id="lettering2" style="background-image: url(../assets/introfilmen-poster.jpg)">
+
+    <h3 id="div-exampleimage">div #exampleimage</h3>
+    <div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="o">/</span> <span class="n">span</span> <span class="m">12</span><span class="p">;</span>
+<span class="nl">grid-row</span><span class="p">:</span> <span class="m">4</span> <span class="o">/</span> <span class="n">span</span> <span class="m">13</span><span class="p">;</span>
+<span class="k">@include</span> <span class="nd">media-query</span><span class="p">(</span><span class="nv">$on-laptop</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">grid-column</span><span class="p">:</span> <span class="m">1</span> <span class="o">/</span> <span class="n">span</span> <span class="m">8</span><span class="p">;</span>
+    <span class="nl">grid-row</span><span class="p">:</span> <span class="m">2</span> <span class="o">/</span> <span class="n">span</span> <span class="m">13</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+    </div>
+
+    <h3 id="div-exampletext">div #exampletext</h3>
+    <div class="language-scss highlighter-rouge"><pre class="highlight"><code><span class="nl">grid-column</span><span class="p">:</span> <span class="m">2</span> <span class="o">/</span> <span class="n">span</span> <span class="m">13</span><span class="p">;</span>
+<span class="nl">grid-row</span><span class="p">:</span> <span class="m">1</span> <span class="o">/</span> <span class="n">span</span> <span class="m">4</span><span class="p">;</span> 
+<span class="k">@include</span> <span class="nd">media-query</span><span class="p">(</span><span class="nv">$on-laptop</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">grid-column</span><span class="p">:</span> <span class="m">8</span> <span class="o">/</span> <span class="n">span</span> <span class="m">5</span><span class="p">;</span>
+    <span class="nl">grid-row</span><span class="p">:</span> <span class="m">1</span> <span class="o">/</span> <span class="n">span</span> <span class="m">8</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+    </div>
+
+  </div>
+  <div class="boxtext grid__offsetcolumn2-2">
+    <h2>.boxtext</h2>
+    <p>Dolem es simet lorem</p>
+    <a href="#" class="button"><span>View case study</span></a>
+    <a href="#" class="link link--next"><span>View all cases</span></a>
+</div>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid grid--space"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"background-image grid__offsetcolumn1-2"</span> <span class="na">id=</span><span class="s">"exampleimage"</span> <span class="na">style=</span><span class="s">"background-image: url(assets/introfilmen-poster.jpg)"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"boxtext grid__offsetcolumn2-2"</span> <span class="na">id=</span><span class="s">"exampletext"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p><br /></p>
+<h3 id="two-columns">2 columns text / image</h3>
+
+<div class="grid grid--space grid--padding">
+    <div class="grid__column1-2">
+        <p>Column 1 - lorem ipsum dolem es simet lorem ipsum dolem es simet lorem ipsum dolem es simet</p>
+    </div>
+    <div class="grid__column2-2 flexcenter">
+        <img class="image" alt="" width="1440" height="1653" src="../assets/introfilmen-poster.jpg" srcset="../assets/introfilmen-poster.jpg 1440w,
+                    ../assets/introfilmen-poster.jpg 720w" sizes="(min-width: 580px) 50vw,
+                    100vw" />
+    </div>
+</div>
+
+<div class="language-scss highlighter-rouge"><pre class="highlight"><code>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">"grid grid--space grid--padding"</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">"grid__column1-2"</span><span class="o">&gt;</span>
+        <span class="p">{{</span> <span class="nt">page</span><span class="nc">.section3</span> <span class="o">|</span> <span class="nt">markdownify</span> <span class="p">}}</span>
+    <span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="s2">"grid__column2-2 flexcenter"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nt">img</span> <span class="nt">class</span><span class="o">=</span><span class="s2">"image"</span>
+            <span class="nt">alt</span><span class="o">=</span><span class="s2">"{{page.section3_image_alt}}"</span>
+            <span class="nt">width</span><span class="o">=</span><span class="s2">"1440"</span> <span class="nt">height</span><span class="o">=</span><span class="s2">"1653"</span>
+            <span class="nt">src</span><span class="o">=</span><span class="s2">"{{site.baseurl}}/assets/work/{{page.slug}}/{{ page.section3_image_small }}"</span> 
+            <span class="nt">srcset</span><span class="o">=</span><span class="s2">"{{site.baseurl}}/assets/work/{{page.slug}}/{{ page.section3_image_medium }} 1440w,</span><span class="err">
+</span><span class="s2">                    {{site.baseurl}}/assets/work/{{page.slug}}/{{ page.section3_image_small }} 720w"</span>
+           <span class="nt">sizes</span><span class="o">=</span><span class="s2">"(min-width: 580px) 50vw,</span><span class="err">
+</span><span class="s2">                   100vw"</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+
+</code></pre>
+</div>
+
+<p><br /></p>
+<h3 id="boxttext-frame">A Boxtext width a frame</h3>
+<p>Availible classes: <code class="highlighter-rouge">boxtext--frame--curiosities</code>, <code class="highlighter-rouge">boxtext--frame--darkoncuriosity</code> <code class="highlighter-rouge">boxtext--frame--dark</code>, <code class="highlighter-rouge">boxtext--frame--people</code></p>
+<div class="boxtext boxtext--frame">
+<h2 style="max-width:13em">.boxtext--frame</h2>
+<a href="#" class="button"><span>Read all about it</span></a>
+<a href="mailto:hi@fullystudios.se" class="link link--next link--invert"><span>Or drop us a line</span></a>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"boxtext boxtext--frame"</span><span class="nt">&gt;</span>
+[...]
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<p><br /><br /><br /></p>
+
+	</div>
+
+</article>
+
+    	</div>
+    </div>
+
+    <footer class="column__wrapper footer">
+
+    <div class="column">
+        <p><strong>Fully Studios</strong></p>
+        <p>Victoriapassagen,<br>Södra Larmgatan 14,<br>411 16 Göteborg<br>
+        <a href="https://www.google.se/maps/dir//Fully+Flared+Digital+Agency,+Victoriapassagen,+S%C3%B6dra+Larmgatan+14,+411+16+G%C3%B6teborg/@57.7032779,11.9651249,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464ff365f9958667:0xc960c81a24202e95!2m2!1d11.9656134!2d57.7033354">Navigate here</a>
+        </p>
+    </div>
+ 
+    <div class="column">
+        <p><strong>Contact us</strong></p>
+        <p>
+            <a href="tel:+46 738 07 30 72">+46 738 07 30 72</a><br>
+            <a href="mailto:hi@fullystudios.se">hi@fullystudios.se</a>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><strong>Follow us</strong></p>
+        <p>
+            <a href="https://www.facebook.com/Fully-Flared-Digital-Agency-150488108297019/?ref=ts&fref=ts">Facebook</a><br>
+            <a href="https://www.instagram.com/fullystudios/">Instagram</a><br>
+            <a href="https://vimeo.com/fullystudios">Vimeo</a><br>
+            <a href="https://github.com/fullystudios">Github</a><br>
+        </p>
+    </div>
+
+    <div class="column">
+        <p><img src="/assets/fully-studios-logo.svg" alt="Fully Studios" /></p>
+    </div>
+
+</footer>
+
+<script src="/assets/bundles/bundle.js"></script>
+
+ 
+
+
+
+ <nav style="display: none">
+    <span>Placeholder navigation during development</span>
+    <ul>
+        <li><a style="font-size: 1em" href="http://localhost:4000">Home</a></li>
+        
+        
+        <li><a style="font-size: 1em" href="/about/">About</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/contact/">Contact us</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/curiousities/">Curiousities</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/design-system/">Design System</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a style="font-size: 1em" href="/building-process/">The process of building this site</a></li>
+        
+        
+        
+        <li><a style="font-size: 1em" href="/work/">Work</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Fira Mono:400,700']
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
