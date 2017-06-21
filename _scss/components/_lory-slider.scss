@@ -3,6 +3,11 @@
  * e.g. width including further controls like arrows etc.
  */
 .slider {
+  
+    padding:5%;
+    padding:5vh;
+    background-color: #666;
+
     &__frame {
         /**
         * (optional) wrapper width, specifies width of the slider frame.
@@ -42,6 +47,7 @@
     }
 
     .prev, .next {
+          display: none !important;
            position: absolute;
            // top: 50%;
            margin-top: -25px;
@@ -70,18 +76,20 @@
     }
 
     .dots > li {
-        background-color: #eee;
-        border: 1px solid #666;
-        border-radius: 5px;
-        box-shadow: inset 1px 1px 1px #888;
+        background-color: #fff;
+        border: 1px solid #fff;
+        // border-radius: 5px;
+        // box-shadow: inset 1px 1px 1px #888;
         display: inline-block;
-        height: 10px;
-        width: 10px;
+        height: 3px;
+        width: 31px;
         margin: 0 5px;
         cursor: pointer;
+        opacity: 0.5;
     }
 
     .dots > li.active {
-        background-color: #41ABE5;
+        opacity:1;
+        // background-color: #41ABE5;
     }
 }

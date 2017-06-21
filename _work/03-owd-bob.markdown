@@ -70,14 +70,32 @@ imageline:
 
 slider:
   slide1:
-    image: "owd-bob/slider-01-photo_finished_print_elin.jpg"
+    image: "owd-bob/slider/dan_1.jpg"
     width: '947px'
   slide2:
-    image: "owd-bob/slider-02-elinjonsson_insta.jpg"
-    width: '647px'
+    image: "owd-bob/slider/dan_2.jpg"
+    width: '947px'
   slide3:
-    image: "owd-bob/slider-03-screen-shot.jpg"
-    width: '710px'
+    image: "owd-bob/slider/elin_1.jpg"
+    width: '947px'
+  slide4:
+    image: "owd-bob/slider/elin_2.jpg"
+    width: '947px'
+  slide5:
+    image: "owd-bob/slider/elin_3.jpg"
+    width: '947px'
+  slide6:
+    image: "owd-bob/slider/elin_4.jpg"
+    width: '947px'
+  slide7:
+    image: "owd-bob/slider/jocke_1.jpg"
+    width: '947px'
+  slide8:
+    image: "owd-bob/slider/jocke_2.jpg"
+    width: '947px'
+  slide9:
+    image: "owd-bob/slider/mikael_selin_1.jpg"
+    width: '947px'
  
 image3_1440: "owd-bob/instagram_1440.jpg"
 image3_alt: "Instagram feed"
