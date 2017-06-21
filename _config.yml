@@ -12,7 +12,7 @@ vimeo: "https://vimeo.com/fullystudios"
 instagram: "https://www.instagram.com/fullystudios/"
 
 # Papricaklubben
-case_highlight1_id: 6
+case_highlight1_id: 5
 
 # Collector
 case_highlight2_id: 1
@@ -52,7 +52,7 @@ defaults:
     values:
       layout: "curious"
       button-text: Read all about it
-      background-color: "#f2f2f2"
+      
   -
     scope:
       path: ""
@@ -60,4 +60,4 @@ defaults:
     values:
       layout: "work"
       button-text: View case
-      background-color: "#f2f2f2"
+      

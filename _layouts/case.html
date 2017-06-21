@@ -8,19 +8,20 @@ layout: default
 		{% if page.background == nil %}
 			<style>
 				.hero--{{page.slug}} {
-					background-image: url({{site.baseurl}}/assets/{{ page.background-image_1440 }});
+					background-image: url({{site.baseurl}}/assets/work/{{page.slug}}/{{ page.background-image_1440 }});
 				}
 				@media (min-width: 1600px), (min-width: 1200px) and (min-resolution: 2dppx) {
 					.hero--{{page.slug}} {
-						background-image: url({{site.baseurl}}/assets/{{ page.background-image_2880 }});
+						background-image: url({{site.baseurl}}/assets/work/{{page.slug}}/{{ page.background-image_2880 }});
 					}
 				}
 			</style>
 		{% endif %}
 	{% endunless %}
-	<div class="hero hero--{{ page.slug }}{% unless page.background-image_2880 == nil %} background-image{% endunless %}" id="work_{{ page.slug }}">
+	<div class="hero hero--{{ page.slug }}{% unless page.background-image_2880 == nil %} background-image{% endunless %}" id="work_{{ page.slug }}" {% unless page.background-image_color == nil %} style="background-color: {{page.background-image_color}}"{% endunless %}>
 		{% comment %}<span class="hero-meta">{{ page.date | date: "%b %-d, %Y" }}</span>{% endcomment %}
-		<header class="hero__header hero__header--shadow">
+		<header class="hero__header">
+		{% comment %}hero__header--shadow{% endcomment %}
 			<h1 itemprop="name headline">
 				{{ page.title }}
 			</h1>
@@ -51,7 +52,7 @@ layout: default
 			</div>
 			{% unless page.link == nil %}
 			<div class="column column--vertical">
-				<a href="{{page.link}}" class="button"><span>{{page.link-text}}</span></a>
+				<a href="{{page.link}}" class="button" id="{{page.slug}}_button"><span>{{page.link-text}}</span></a>
 			</div>
 			{% endunless %}
 		</div>
@@ -79,22 +80,47 @@ layout: default
 
 <div class="boxgrid">
 	<h2 class="boxgrid__header h4">Check out our other projects</h2>
-	{% for work in site.work limit:3 %}
-		{% if work.title == page.title %}
-			{% continue %}
+
+	{% comment %}
+	Get next and previous work post,
+	and assign a default work post if there are no next or previous post
+	{% endcomment %}
+	{% assign previousPost = page.previous %}
+	{% assign nextPost = page.next %}
+
+	{% if previousPost == nil%}
+		{% assign previousPost = site.work[0] %}
+		{% if previousPost == nextPost %}
+			{% assign previousPost = site.work[1] %}
 		{% endif %}
-		<a class="boxgrid__box" href="{{ work.url | prepend: site.baseurl }}">
-			<figure>
-				<div class="image-loader" style="background: #ccc"> 
-					<img src="{{site.baseurl}}/assets/{{work.background-image_1440}}" alt="{{ work.title }}">	
-				</div>
-				<figcaption>
-					<h3>{{ work.title }}</h3>
-					<p>{{ work.subtitle }}</p>
-				</figcaption>
-			</figure>
-		</a>
-	{% endfor %}
+	{% endif %}
+
+	{% if nextPost == nil%}
+		{% assign nextPost = site.work[0] %}
+		{% if nextPost == nextPost %}
+			{% assign nextPost = site.work[1] %}
+		{% endif %}
+	{% endif %}
+
+	<a class="boxgrid__box" href="{{ previousPost.url | prepend: site.baseurl }}">
+		<div class="image-loader" style="background: {{previousPost.background-image_color}}"> 
+			<img src="{{site.baseurl}}/assets/work/{{previousPost.slug}}/{{previousPost.background-image_1440}}" alt="{{ previousPost.title }}">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>{{ previousPost.title }}</h3>
+			<p>{{ previousPost.subtitle }}</p>
+		</div>
+	</a>
+
+	<a class="boxgrid__box" href="{{ nextPost.url | prepend: site.baseurl }}">
+		<div class="image-loader" style="background: {{nextPost.background-image_color}}"> 
+			<img src="{{site.baseurl}}/assets/work/{{nextPost.slug}}/{{nextPost.background-image_1440}}" alt="{{ nextPost.title }}">	
+		</div>
+		<div class="boxgrid__caption">
+			<h3>{{ nextPost.title }}</h3>
+			<p>{{ nextPost.subtitle }}</p>
+		</div>
+	</a>
 </div>
 
 {% comment %}

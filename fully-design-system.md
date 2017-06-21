@@ -5,9 +5,16 @@ permalink: /design-system/
 published: true
 author: Jonas Sandstedt
 date: 2017-04-24
+background-image_1440: '../assets/introfilmen-poster.jpg'
+background-image_2880: '../assets/introfilmen-poster.jpg'
+vimeo_IDs: 
+  - "211438822"
+  - "205372936"
+  - "162523357"
+  - "54016145"
 ---
 
-<header class="ds-header" markdown='1'>
+<header class="ds-header" markdown='1' style="margin-top: 0">
 ## Colors
 </header>
 
@@ -94,11 +101,11 @@ Headlines, textblock etc.
 
 ### H3 headline
 
-#### H4 headline
+### H4 headline
 
-##### H5 headline
+#### H5 headline
 
-###### H6 headline
+##### H6 headline
 
 Paragraph text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis maiores hic quo optio alias odit voluptas debitis autem voluptate, facilis quaerat numquam, porro maxime repellendus sapiente a illum eius adipisci.
 
@@ -160,7 +167,7 @@ Boxes with different dropshadows for text and images.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.
 
 ``` html
-<div class="box" markdown="1">
+<div class="box"></div>
 ```
 
 </div>
@@ -168,7 +175,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat,
 <div class="box box--right box--people" markdown="1" style="background-image:url(http://placekitten.com/g/1920/600); color:white">
 
 ``` html
-<div class="box box--right box--people" markdown="1" style="background-image:url(http://placekitten.com/g/1920/600)">
+<div class="box box--right box--people" style="background-image:url(http://placekitten.com/g/1920/600)"></div>
 ```
 </div>
 
@@ -176,7 +183,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat,
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.
 
 ``` html
-<div class="box box--business" markdown="1"></div>
+<div class="box box--business"></div>
 ```
 </div>
 
@@ -184,7 +191,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat,
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.
 
 ``` html
-<div class="box box--right box--curiosities" markdown="1">
+<div class="box box--right box--curiosities"></div>
 ```
 </div>
 
@@ -192,7 +199,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat,
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat, voluptas corporis voluptatum architecto sequi fuga. Earum ipsam commodi nisi soluta ut officiis eligendi culpa repudiandae ipsum cupiditate.
 
 ``` html
-<div class="box box--metal" markdown="1">
+<div class="box box--metal"></div>
+```
+</div>
+
+<div class="box box--right box--up" markdown="1">
+
+Make the shadow go upwards instead by using the class `box--up`
+``` html
+<div class="box box--right box--up"></div>
 ```
 </div>
 
@@ -200,9 +215,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. At illo, vero placeat,
 Also works with `.box--bgpeople`, `.box--bgcuriosities`, `.box--bgbusiness` and  `.box--bgmetal`
 
 ``` html
-<div class="box box--metal" markdown="1">
+<div class="box box--metal">
 ```
 </div>
+
 
 
 
@@ -221,7 +237,7 @@ a grid with images and texts. Used in "other projects"
         src=" http://placekitten.com/g/1440/830"
         alt="A beautiful cat">	
     </div>
-    <figcaption>
+    <figcaption class="boxgrid__caption">
         <h3>A beautiful cat</h3>
         <p>lorem ipsum</p>
     </figcaption>
@@ -233,7 +249,7 @@ a grid with images and texts. Used in "other projects"
         src="http://placekitten.com/g/1440/830"
         alt="A beautiful cat">	
     </div>
-    <figcaption>
+    <figcaption class="boxgrid__caption">
         <h3>Another beautiful cat</h3>
         <p>Lorem ipsum dolem es simet</p>
     </figcaption>
@@ -248,7 +264,7 @@ a grid with images and texts. Used in "other projects"
         <div class="image-loader" style="background: #c1c1c1"> <!--Change this color to an average color from the image-->
             <img src="" alt="Fig title">	
         </div>
-        <figcaption>
+        <figcaption class="boxgrid__caption">
             <h3>Fig title</h3>
             <p>Fig Description</p>
         </figcaption>
@@ -267,7 +283,7 @@ a grid with images and texts. Used in "other projects"
             src=" http://placekitten.com/g/1440/830"
             alt="A beautiful cat">	
         </div>
-        <figcaption>
+        <figcaption class="boxgrid__caption">
             <h3 class="h4">A beautiful cat</h3>
             <p>lorem ipsum</p>
             <a href="#" class="button"><span>View case</span></a>
@@ -279,7 +295,7 @@ a grid with images and texts. Used in "other projects"
             src="http://placekitten.com/g/1440/830"
             alt="A beautiful cat">	
         </div>
-        <figcaption>
+        <figcaption class="boxgrid__caption">
             <h3 class="h4">Another beautiful cat</h3>
             <p>Lorem ipsum</p>
             <a href="#" class="button"><span>View case</span></a>
@@ -291,7 +307,7 @@ a grid with images and texts. Used in "other projects"
             src="http://placekitten.com/g/1440/830"
             alt="A beautiful cat">	
         </div>
-        <figcaption>
+        <figcaption class="boxgrid__caption">
             <h3 class="h4">Another beautiful cat</h3>
             <p>Lorem ipsum dolem es simet es lorem ipsum</p>
             <a href="#" class="button"><span>View case</span></a>
@@ -303,7 +319,7 @@ a grid with images and texts. Used in "other projects"
             src="http://placekitten.com/g/1440/830"
             alt="A beautiful cat">	
         </div>
-        <figcaption>
+        <figcaption class="boxgrid__caption">
             <h3 class="h4">Another beautiful cat</h3>
             <p>Lorem ipsum</p>
             <a href="#" class="button"><span>View case</span></a>
@@ -315,7 +331,7 @@ a grid with images and texts. Used in "other projects"
             src="http://placekitten.com/g/1440/830"
             alt="A beautiful cat">	
         </div>
-        <figcaption>
+        <figcaption class="boxgrid__caption">
             <h3 class="h4">Lorem ipsum</h3>
             <p>Lorem ipsum dolem es simet lorem</p>
             <a href="#" class="button"><span>View case</span></a>
@@ -327,7 +343,7 @@ a grid with images and texts. Used in "other projects"
             src="http://placekitten.com/g/1440/830"
             alt="A beautiful cat">	
         </div>
-        <figcaption>
+        <figcaption class="boxgrid__caption">
             <h3 class="h4">Another beautiful cat</h3>
             <p>Lorem ipsum dolem es simet</p>
             <a href="#" class="button"><span>View case</span></a>
@@ -346,6 +362,8 @@ a grid with images and texts. Used in "other projects"
 Load images with style
 </header>
 
+<h3 id="backgrund-image">Fixed ratio image loader</h3>
+
 <div class="image-loader" style="background: #c1c1c1">
     <img 
     src="http://placekitten.com/g/1440/830"
@@ -361,15 +379,97 @@ Load images with style
 
 ```
 
+<br>
+<h3 id="backgrund-image">Backgrund image</h3>
+
+<style>
+    #{{page.slug}}_bg {
+        background-image: url(../assets/introfilmen-poster.jpg);
+    }
+    @media (min-width: 800px) {
+        #{{page.slug}}_bg {
+            background-image: url(../assets/introfilmen-poster.jpg);
+        }
+    }
+</style>
+<div class="background-image background-image--padding flexcenter invert" id="{{page.slug}}_bg" markdown="1">
+    Availible classes:
+    .background-image
+    .background-image--padding
+    .background-image--largepadding
+</div>
+
+```
+{% raw %}
+<style>
+    #{{page.slug}}_bg {
+        background-image: url(../assets/introfilmen-poster.jpg);
+    }
+    @media (min-width: 800px) {
+        #{{page.slug}}_bg {
+            background-image: url(../assets/introfilmen-poster.jpg);
+        }
+    }
+</style>
+<div class="background-image background-image--padding flexcenter invert" id="{{page.slug}}_bg">
+    <p>Lorem ipsum</p>
+</div>
+{% endraw %}
+```
+
+<br>
+<h3 id="imagegrid">Imagegrid</h3>
+<p>Also works with images 😁</p>
+
+{% unless page.vimeo_IDs == nil %}
+<section class="imagegrid imagegrid--firstlarge">
+	{% for video in page.vimeo_IDs %}
+	<div class="imagegrid__image">
+		<div class="video">
+			<iframe src="https://player.vimeo.com/video/{{video}}" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+	</div>
+        
+{% endfor %}
+    <div class="imagegrid__image imagegrid__image--two">
+        <img src="../assets/introfilmen-poster.jpg">
+    </div>
+    <div class="imagegrid__image imagegrid__image--two">
+        <img src="../assets/introfilmen-poster.jpg">
+    </div>
+</section>
+{% endunless %}
+
+<p>This example takes an array of vimeo video ID's</p>
+``` html
+{% raw %}
+{% unless page.vimeo_IDs == nil %}
+<section class="imagegrid imagegrid--firstlarge">
+	{% for video in page.vimeo_IDs %}
+	<div class="imagegrid__image">
+		<div class="video">
+			<iframe src="https://player.vimeo.com/video/{{video}}" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+	</div>
+	{% endfor %}
+    <div class="imagegrid__image imagegrid__image--two"></div>
+    <div class="imagegrid__image imagegrid__image--two"></div>
+</section>
+{% endunless %}
+{% endraw %}
+```
+
 <header class="ds-header" markdown='1'>
-## Imagebox + text
-Example of a custom CSS grid layout using a container with the class `grid`.
+## Layouts
 </header>
+
+<h3 id="imagebox+text">Imagebox + text</h3>
+<p>Example of a custom CSS grid layout using a container with the class `grid`.</p>
 
 <div class="grid grid--space case-highlight" markdown='1'>
 <div class="flexcenter center background-image invert grid__offsetcolumn1-2" id="lettering2" markdown='1' style="background-image: url(../assets/introfilmen-poster.jpg)">
 
-#### div #exampleimage
+### div #exampleimage
 ``` scss
 grid-column: 1 / span 12;
 grid-row: 4 / span 13;
@@ -379,7 +479,7 @@ grid-row: 4 / span 13;
 }
 ```
 
-#### div #exampletext
+### div #exampletext
 ``` scss
 grid-column: 2 / span 13;
 grid-row: 1 / span 4; 
@@ -400,11 +500,53 @@ grid-row: 1 / span 4;
 
 ``` html
 <div class="grid grid--space">
-    <div class="background-image" id="exampleimage" style="background-image: url(assets/introfilmen-poster.jpg)"></div>
-    <div class="boxtext" id="exampletext"></div>
+    <div class="background-image grid__offsetcolumn1-2" id="exampleimage" style="background-image: url(assets/introfilmen-poster.jpg)"></div>
+    <div class="boxtext grid__offsetcolumn2-2" id="exampletext"></div>
 </div>
 ```
 
+<br>
+<h3 id="two-columns">2 columns text / image</h3>
+
+<div class="grid grid--space grid--padding">
+    <div class="grid__column1-2">
+        <p>Column 1 - lorem ipsum dolem es simet lorem ipsum dolem es simet lorem ipsum dolem es simet</p>
+    </div>
+    <div class="grid__column2-2 flexcenter">
+        <img class="image"
+            alt="{{page.section3_image_alt}}"
+            width="1440" height="1653"
+            src="../assets/introfilmen-poster.jpg" 
+            srcset="../assets/introfilmen-poster.jpg 1440w,
+                    ../assets/introfilmen-poster.jpg 720w"
+            sizes="(min-width: 580px) 50vw,
+                    100vw">
+    </div>
+</div>
+
+```scss
+{% raw %}
+<div class="grid grid--space grid--padding">
+    <div class="grid__column1-2">
+        {{ page.section3 | markdownify }}
+    </div>
+    <div class="grid__column2-2 flexcenter">
+        <img class="image"
+            alt="{{page.section3_image_alt}}"
+            width="1440" height="1653"
+            src="{{site.baseurl}}/assets/work/{{page.slug}}/{{ page.section3_image_small }}" 
+            srcset="{{site.baseurl}}/assets/work/{{page.slug}}/{{ page.section3_image_medium }} 1440w,
+                    {{site.baseurl}}/assets/work/{{page.slug}}/{{ page.section3_image_small }} 720w"
+           sizes="(min-width: 580px) 50vw,
+                   100vw">
+    </div>
+</div>
+{% endraw %}
+```
+
+<br>
+<h3 id="boxttext-frame">A Boxtext width a frame</h3>
+<p markdown='1'>Availible classes: `boxtext--frame--curiosities`, `boxtext--frame--darkoncuriosity` `boxtext--frame--dark`, `boxtext--frame--people`</p>
 <div class="boxtext boxtext--frame">
 <h2 style="max-width:13em">.boxtext--frame</h2>
 <a href="#" class="button"><span>Read all about it</span></a>

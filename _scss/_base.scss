@@ -60,6 +60,7 @@ svg { max-width: 100%}
     position: relative;
     padding-bottom: 56.3%; // 16 : 9 ratio
     width: 100%;
+    overflow: hidden;
     img {
         position: absolute;
         top: 0;
@@ -155,7 +156,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     // background: red;
 }
 h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
-    margin-top: $s-small * 0.3;
+    margin-top: $s-small;
 }
 // p { background: green;}
 
@@ -170,8 +171,8 @@ h2, .h2 {
 }
 
 h3, .h3 { 
-    font-size: 2em;
-    max-width: calc( 28em + #{$spacing-unit*2});    
+    font-size: 1.5em;
+    max-width: calc( 37.35em + #{$spacing-unit*2});
 }
 
 h4, .h4 { // eg ingress
@@ -186,6 +187,10 @@ h5, .h5, h6, .h6 {
 .pre-header {
     font-size: 1em;
     letter-spacing: 0.125em;
+}
+
+.sub-header {
+    font-size: 1.25em;
 }
 
 /**

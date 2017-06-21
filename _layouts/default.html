@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="{{page.bg-color}}">
+<html lang="en" {% unless page.background-color == nil %}style="background-color: {{page.background-color}}"{% endunless %}>
 
   {% include head.html %}
 
-  <body class="{{page.bg-color}}">
+  <body {% unless page.background-color == nil %}style="background-color: {{page.background-color}}"{% endunless %}>
 
     {% include header.html %}
 

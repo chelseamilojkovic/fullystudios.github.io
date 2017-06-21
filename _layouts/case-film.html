@@ -3,12 +3,12 @@ layout: case
 ---
 
 
-{% unless page.videos == nil %}
+{% unless page.vimeo_IDs == nil %}
 <section class="imagegrid imagegrid--firstlarge">
-	{% for video in page.videos %}
+	{% for video in page.vimeo_IDs %}
 	<div class="imagegrid__image">
 		<div class="video">
-			<iframe src="https://player.vimeo.com/video/211438822" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<iframe src="https://player.vimeo.com/video/{{video}}" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
 	</div>
 	{% endfor %}
@@ -20,7 +20,7 @@ layout: case
 <div class="imagegrid">
 {% for frame in page.frames %}
 	<div class="imagegrid__image">
-		<img class="image" src="{{site.baseurl}}/assets/{{frame}}">
+		<img alt="{{frame.alt}}" class="image" src="{{site.baseurl}}/assets/work/{{page.slug}}/{{frame.medium}}">
 	</div>
 {% endfor %}
 </div>
@@ -36,9 +36,9 @@ layout: case
             <img class="image"
                 alt="{{column5050_image_alt}}"
                 width="1440" height="1653"
-                src="{{site.baseurl}}/assets/{{ page.column5050_image_720 }}" 
-                srcset="{{site.baseurl}}/assets/{{ page.column5050_image_1440 }} 1440w,
-                        {{site.baseurl}}/assets/{{ page.column5050_image_720 }} 720w"
+                src="{{site.baseurl}}/assets/work/{{page.slug}}/{{ page.column5050_image_720 }}" 
+                srcset="{{site.baseurl}}/assets/work/{{page.slug}}/{{ page.column5050_image_1440 }} 1440w,
+                        {{site.baseurl}}/assets/work/{{page.slug}}/{{ page.column5050_image_720 }} 720w"
                 sizes="100vw">
         </div>
     </section>

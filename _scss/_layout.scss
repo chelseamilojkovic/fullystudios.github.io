@@ -16,16 +16,16 @@
     // 2 column grid component. Example: Case Owd Bob
     &__column1-2 {
         margin-bottom: $s-small;
-        grid-column: 1 / span 12;
+        grid-column: 1 / -1;
         grid-row: 1;
-        justify-self: center;
         @include media-query($on-laptop) {
+            justify-self: center;
             grid-column: 1 / span 6;
         }
     }
     &__column2-2 {
         margin-bottom: $s-small;
-        grid-column: 1 / span 12;        
+        grid-column: 1 / -1;        
         grid-row: 2;
         justify-self: center;
         @include media-query($on-laptop) {
@@ -34,9 +34,30 @@
         }
     }
 
+    // 2 column grid component. Example: Case internet by hand
+    &__column-large {
+        margin-bottom: $s-small;
+        grid-column: 1 / -1;
+        grid-row: 1;
+        justify-self: center;
+        @include media-query($on-laptop) {
+            grid-column: 1 / span 8;
+        }
+    }
+    &__column-small {
+        margin-bottom: $s-small;
+        grid-column: 1 / -1;        
+        grid-row: 2;
+        justify-self: center;
+        @include media-query($on-laptop) {
+            grid-column: 9 / span 4;
+            grid-row: 1;
+        }
+    }
+
     // 2 column offset component. Example: Landing Case
     &__offsetcolumn1-2 {
-        grid-column: 1 / span 12;
+        grid-column: 1 / -1;
         grid-row: 4 / span 13;
         @include media-query($on-laptop) {
             grid-column: 1 / span 8;
@@ -61,7 +82,7 @@
 
     // Fullwidth image with box underneath
     &__fullwidth {
-        grid-column: 1 / span 12;
+        grid-column: 1 / -1;
         grid-row: 1 / span 10; 
     }
 
@@ -118,7 +139,7 @@
 
 // Work layout
 .work-ingress {
-    grid-column: 1 / span 12;
+    grid-column: 1 / -1;
     grid-row: 1 / span 4;
     @include media-query($on-laptop) {
         grid-column: 1 / span 5;
@@ -126,7 +147,7 @@
     }
 }
 .work1-image {
-    grid-column: 1 / span 12;
+    grid-column: 1 / -1;
     grid-row: 9 / span 11;
     @include media-query($on-laptop) {
         grid-column: 1 / span 8;
@@ -167,7 +188,7 @@
     grid-row: 3 / span 10;
     @include media-query($on-laptop) {
         grid-column: 1 / 8;
-        grid-row: 5 / span 12;
+        grid-row: 5 / 17;
     }
 }
 
@@ -203,6 +224,48 @@
         grid-row: 14 / span 7;
     }
 }
+
+// Curiosities layout
+.grid--curiosities {
+    .bgimage:nth-of-type(1) {
+        grid-column: 1 / -1;
+        grid-row: 3 / span 10;
+        @include media-query($on-laptop) {
+            grid-row: 1 / span 17;
+        }
+    }
+
+    .boxtext:nth-of-type(1) {
+        z-index: 1;
+        grid-column: 1 / -1;
+        grid-row: 3 / span 10;
+        @include media-query($on-laptop) {
+            grid-column: 2 / span 5;
+            grid-row: 14 / span 7;
+        }
+    }
+
+    .bgimage:nth-of-type(2) {
+        grid-column: 1 / -1;
+        grid-row: 3 / span 10;
+        @include media-query($on-laptop) {
+            grid-column: 1 / span 8;
+            grid-row: 22 / span 17;
+        }
+    }
+
+    .boxtext:nth-of-type(2) {
+        z-index: 1;
+        grid-column: 1 / -1;
+        grid-row: 3 / span 10;
+        @include media-query($on-laptop) {
+            grid-column: 8 / span 5;
+            grid-row: 20 / span 10;
+        }
+    }
+
+}
+
 /**
  * Site header
  */
@@ -247,42 +310,6 @@
     }
 }
 
-
-// Image grid
-.imagegrid {
-    display: flex;
-    flex-flow: row wrap;
-    margin: $s-small*0.5;
-    @include media-query($on-palm) {
-        margin: $s-small*0.75;
-    }
-    .imagegrid__image {
-        margin: $s-small*0.25 0;
-        @include media-query($on-palm) {
-            margin: $s-small*0.25;
-            height: auto; 
-            flex: 1 0  calc(50% - #{$s-small*0.5});
-            max-width: calc(50% - #{$s-small*0.5});
-        }
-        @include media-query($on-laptop) {
-            flex: 1 0  calc(33.333% - #{$s-small*0.5});
-            max-width: calc(33.333% - #{$s-small*0.5});
-        }
-    }
-    img {
-        width: 100%;
-        height: auto;
-    }
-    &--firstlarge {
-        .imagegrid__image:first-child {
-            width: 100%;
-            @include media-query($on-palm) {
-                flex: 1 0  calc(100% - #{$s-small*0.5});
-                max-width: calc(100% - #{$s-small*0.5});
-            }
-        }
-    }
-}
 .imageline {
     background-color: $c-dark;
     display: flex;
