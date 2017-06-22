@@ -1966,60 +1966,79 @@ p {
  * (optional) define here the style definitions which should be applied on the slider container
  * e.g. width including further controls like arrows etc.
  */
-.slider {
-  padding: 5%;
-  padding: 5vh;
+section.slider-wide {
+  padding-top: 25px !important;
+  padding-bottom: 50px !important;
   background-color: #666; }
-  .slider__frame {
-    /**
+
+.slider__frame {
+  /**
         * (optional) wrapper width, specifies width of the slider frame.
         */
-    width: 100%;
-    position: relative;
-    font-size: 0;
-    line-height: 0;
-    overflow: hidden;
-    white-space: nowrap; }
-  .slider__slides {
-    display: inline-block; }
-  .slider__slide {
-    position: relative;
-    display: inline-block;
-    width: 800px;
-    /**
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.slider__slides {
+  display: inline-block; }
+
+.slider__slide {
+  position: relative;
+  display: inline-block;
+  width: 800px;
+  max-width: 100vw;
+  margin-left: 5px;
+  margin-right: 5px;
+  /**
         * (optional) if the content inside the slide element has a defined size.
         */ }
-    .slider__slide img {
-      width: auto; }
-  .slider .prev, .slider .next {
-    display: none !important;
-    position: absolute;
-    margin-top: -25px;
-    display: block;
-    cursor: pointer; }
-  .slider .next {
-    right: 0; }
-  .slider .prev {
-    left: 0; }
-  .slider .next svg, .slider .prev svg {
-    width: 25px; }
-  .slider .dots {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    position: absolute;
-    width: 100%; }
-  .slider .dots > li {
-    background-color: #fff;
-    border: 1px solid #fff;
-    display: inline-block;
-    height: 3px;
-    width: 31px;
-    margin: 0 5px;
-    cursor: pointer;
-    opacity: 0.5; }
-  .slider .dots > li.active {
-    opacity: 1; }
+  @media screen and (min-width: 50em) {
+    .slider__slide {
+      max-width: 40vw;
+      margin-left: 10px;
+      margin-right: 10px; } }
+  .slider__slide img {
+    width: auto; }
+
+.slider .prev, .slider .next {
+  display: none !important;
+  position: absolute;
+  margin-top: -25px;
+  display: block;
+  cursor: pointer; }
+
+.slider .next {
+  right: 0; }
+
+.slider .prev {
+  left: 0; }
+
+.slider .next svg, .slider .prev svg {
+  width: 25px; }
+
+.slider .dots {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 50px; }
+
+.slider .dots > li {
+  background-color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  height: 3px;
+  width: 31px;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.5; }
+
+.slider .dots > li.active {
+  opacity: 1; }
 
 #case2__image {
   height: 90%;

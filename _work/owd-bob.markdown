@@ -70,31 +70,31 @@ imageline:
 
 slider:
   slide1:
-    image: "owd-bob/slider/dan_1.jpg"
+    image: "slider/dan_1.jpg"
     width: '947px'
   slide2:
-    image: "owd-bob/slider/dan_2.jpg"
+    image: "slider/dan_2.jpg"
     width: '947px'
   slide3:
-    image: "owd-bob/slider/elin_1.jpg"
+    image: "slider/elin_1.jpg"
     width: '947px'
   slide4:
-    image: "owd-bob/slider/elin_2.jpg"
+    image: "slider/elin_2.jpg"
     width: '947px'
   slide5:
-    image: "owd-bob/slider/elin_3.jpg"
+    image: "slider/elin_3.jpg"
     width: '947px'
   slide6:
-    image: "owd-bob/slider/elin_4.jpg"
+    image: "slider/elin_4.jpg"
     width: '947px'
   slide7:
-    image: "owd-bob/slider/jocke_1.jpg"
+    image: "slider/jocke_1.jpg"
     width: '947px'
   slide8:
-    image: "owd-bob/slider/jocke_2.jpg"
+    image: "slider/jocke_2.jpg"
     width: '947px'
   slide9:
-    image: "owd-bob/slider/mikael_selin_1.jpg"
+    image: "slider/mikael_selin_1.jpg"
     width: '947px'
  
 image3_1440: "instagram_1440.jpg"
